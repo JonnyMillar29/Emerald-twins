@@ -302,3 +302,22 @@ Route101_Text_RouteSign:
 	.string "{UP_ARROW} OLDALE TOWN$"
 
 `
+
+script Route101_EventScript_Test_Battle {
+	special(SavePlayerParty)
+	fadescreen(FADE_TO_BLACK)
+	special(ChooseHalfPartyForBattle)
+	waitstate
+	goto_if_ne(VAR_RESULT, 0, Route101_EventScript_Do_Test_Battle)
+	end
+}
+
+script Route101_EventScript_Do_Test_Battle {
+	multi_2_vs_1(TRAINER_TEST_1, Test_Battle_Text_1, PARTNER_TEST_BATTLE)
+	msgbox("complete", MSGBOX_AUTOCLOSE)
+	end
+}
+
+text Test_Battle_Text_1 {
+	"test1 :("
+}

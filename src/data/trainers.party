@@ -16873,3 +16873,22 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TEST_1 ===
+Name: test1
+Class: Youngster
+Pic: Youngster
+Gender: Male
+Music: Male
+
+Zigzagoon
+Level: 5
+
+Poochyena
+Level: 5
+
+Surskit
+Level: 5
+
+Wurmple
+Level: 5

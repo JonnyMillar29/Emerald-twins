@@ -103,3 +103,40 @@
             },
         },
     },
+#line 45
+    [PARTNER_TEST_BATTLE] =
+    {
+#line 46
+        .trainerName = _("TWIN"),
+#line 47
+        .trainerPic = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
+        .encounterMusic_gender = 
+#line 49
+            TRAINER_ENCOUNTER_MUSIC_MALE,
+        .partySize = 2,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 51
+            .species = SPECIES_DEWPIDER,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 53
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 52
+            .lvl = 5,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+            {
+#line 54
+            .species = SPECIES_GRUBBIN,
+            .gender = TRAINER_MON_RANDOM_GENDER,
+#line 56
+            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+#line 55
+            .lvl = 5,
+            .nature = NATURE_HARDY,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            },
+        },
+    },
