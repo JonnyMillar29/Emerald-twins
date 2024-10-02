@@ -304,7 +304,7 @@ Route101_Text_RouteSign:
 Route101_EventScript_SetTwin::
 	lockall
 	msgbox Route101_EventScript_SetTwin_Text_0, MSGBOX_AUTOCLOSE
-	setfollower 7, FOLLOWER_ALL, 0, PARTNER_TWIN
+	setfollower 7, ALL_LAND, 0, PARTNER_TWIN
 	releaseall
 	end
 
