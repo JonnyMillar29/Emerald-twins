@@ -39,6 +39,8 @@
 #include "constants/trainers.h"
 #include "constants/event_objects.h"
 #include "constants/moves.h"
+#include "load_save.h"
+#include <math.h>
 
 // EWRAM vars.
 EWRAM_DATA const struct BattleFrontierTrainer *gFacilityTrainers = NULL;
@@ -2991,6 +2993,7 @@ void TryHideBattleTowerReporter(void)
 void FillPartnerParty(u16 trainerId)
 {
     s32 i, j, k;
+    int cutoff;
     u32 firstIdPart = 0, secondIdPart = 0, thirdIdPart = 0;
     u32 ivs, level, personality;
     u16 monId;
@@ -2999,7 +3002,19 @@ void FillPartnerParty(u16 trainerId)
     s32 ball = -1;
     SetFacilityPtrsGetLevel();
 
-    if (trainerId > TRAINER_PARTNER(PARTNER_NONE))
+    if (trainerId == TRAINER_PARTNER(PARTNER_TWIN))
+    {
+        if (gPlayerPartyCount < 5)
+        {
+            cutoff = (gPlayerPartyCount < 3) ? 1 : 2;
+            
+            for(i = cutoff; i < cutoff*2; i++)
+                gPlayerParty[i + (3-cutoff)] = gSaveBlock1Ptr->playerParty[i];
+
+            ZeroMonData(&gPlayerParty[cutoff]);
+        }   
+    }
+    else if (trainerId > TRAINER_PARTNER(PARTNER_NONE))
     {
         for (i = 0; i < 3; i++)
             ZeroMonData(&gPlayerParty[i + 3]);

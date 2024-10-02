@@ -198,6 +198,41 @@ void LoadPlayerParty(void)
     }
 }
 
+void LoadPlayerPartyAfterPartnerBattle(void)
+{
+    int i;
+    // int cutoff = 3;
+
+    gPlayerPartyCount = gSaveBlock1Ptr->playerPartyCount;
+    
+    // if(gPlayerPartyCount < 3)
+    //     cutoff = 1;
+    // else if(gPlayerPartyCount < 5)
+    //     cutoff = 2;
+
+    int cutoff = (gPlayerPartyCount < 5) ? ((gPlayerPartyCount < 3) ? 1 : 2) : 3;
+
+    SavePlayerParty();
+
+    for (i=cutoff; i < gPlayerPartyCount; i++)
+    {
+        u32 data;
+        gPlayerParty[i] = gSaveBlock1Ptr->playerParty[i+(3-cutoff)];
+
+        // TODO: Turn this into a save migration once those are available.
+        // At which point we can remove hp and status from Pokemon entirely.
+        data = gPlayerParty[i].maxHP - gPlayerParty[i].hp;
+        SetBoxMonData(&gPlayerParty[i].box, MON_DATA_HP_LOST, &data);
+        data = gPlayerParty[i].status;
+        SetBoxMonData(&gPlayerParty[i].box, MON_DATA_STATUS, &data);
+    }
+
+    for (i=gPlayerPartyCount; i < PARTY_SIZE; i++)
+        ZeroMonData(&gPlayerParty[i]);
+    
+    SavePlayerParty();
+}
+
 void LoadLastThreeMons(void)
 {
     int i;
