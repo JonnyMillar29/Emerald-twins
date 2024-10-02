@@ -112,28 +112,17 @@
         .trainerPic = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
         .encounterMusic_gender = 
 0,
-        .partySize = 2,
+        .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
 #line 51
-            .species = SPECIES_FALINKS,
+            .species = SPECIES_GEODUDE_ALOLAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 53
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
 #line 52
             .lvl = 10,
-            .nature = NATURE_HARDY,
-            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
-            },
-            {
-#line 54
-            .species = SPECIES_UMBREON,
-            .gender = TRAINER_MON_RANDOM_GENDER,
-#line 56
-            .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 55
-            .lvl = 8,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             },

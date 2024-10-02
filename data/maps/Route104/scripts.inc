@@ -21,6 +21,7 @@ Route104_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Route104_EventScript_TrySetRivalPos
 	call Route104_EventScript_ShowOrHideWhiteHerbFlorist
+	call Route104_EventScript_ChangeEncounterGroup
 	end
 
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
@@ -32,6 +33,35 @@ Route104_EventScript_ShowOrHideWhiteHerbFlorist::
 Route104_EventScript_HideWhiteHerbFlorist::
 	setflag FLAG_HIDE_ROUTE_104_WHITE_HERB_FLORIST
 	return
+
+Route104_EventScript_ChangeEncounterGroup::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	compare VAR_0x8009 > 30, 0
+	goto_if_ne Route104_EventScript_ChangeEncounterGroup_2
+Route104_EventScript_ChangeEncounterGroup_1:
+	compare VAR_0x8009 <= 30, 0
+	goto_if_ne Route104_EventScript_ChangeEncounterGroup_4
+	return
+
+Route104_EventScript_ChangeEncounterGroup_2:
+	goto
+	Route_104_MapScripts_MAP_SCRIPT_ON_TRANSITION_1
+	goto Route104_EventScript_ChangeEncounterGroup_1
+
+Route104_EventScript_ChangeEncounterGroup_4:
+	goto
+	Route_104_MapScripts_MAP_SCRIPT_ON_TRANSITION_2
+	return
+
+
+Route_104_MapScripts_MAP_SCRIPT_ON_TRANSITION_1::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 0
+	end
+
+
+Route_104_MapScripts_MAP_SCRIPT_ON_TRANSITION_2::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 1
+	end
 
 Route104_EventScript_TrySetRivalPos::
 	goto_if_ge VAR_BOARD_BRINEY_BOAT_STATE, 1, Route104_EventScript_DontSetRivalPos

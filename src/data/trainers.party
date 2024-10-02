@@ -4798,29 +4798,41 @@ Items: Potion / Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Geodude
+Geodude @ Bright Powder
+Ability: Sand Veil
 Level: 12
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
+- Rock Polish
 - Defense Curl
-- Rock Throw
-- Rock Tomb
+- Rollout
+- Bulldoze
 
-Geodude
-Level: 12
+Growlithe-Hisui @ Rock Gem  
+Ability: Intimidate  
+Level: 13 
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Tackle
-- Defense Curl
-- Rock Throw
-- Rock Tomb
+- Rock Tomb  
+- Flame Charge  
+- Bite  
+- Howl
 
-Nosepass @ Oran Berry
+Lileep @ Leftovers
+Ability: Storm Drain
+Level: 13
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Acid
+- Giga Drain
+- Ingrain
+- Mirror Coat
+
+Nosepass @ Berry Juice
+Ability: Sand Force
 Level: 15
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
 - Block
 - Harden
-- Tackle
-- Rock Tomb
+- Thunder Wave
+- Rock Throw
 
 === TRAINER_BRAWLY_1 ===
 Name: BRAWLY
