@@ -49,6 +49,8 @@ void SetContinueGameWarpStatusToDynamicWarp(void);
 void ClearContinueGameWarpStatus2(void);
 void SavePlayerParty(void);
 void LoadPlayerParty(void);
+void LoadPlayerPartyAfterPartnerBattle(void);
+void LoadLastThreeMons(void);
 void SaveObjectEvents(void);
 void LoadObjectEvents(void);
 void CopyPartyAndObjectsToSave(void);

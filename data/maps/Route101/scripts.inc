@@ -300,3 +300,14 @@ Route101_Text_WildPokemonInTallGrass:
 Route101_Text_RouteSign:
 	.string "ROUTE 101\n"
 	.string "{UP_ARROW} OLDALE TOWN$"
+
+Route101_EventScript_SetTwin::
+	lockall
+	msgbox Route101_EventScript_SetTwin_Text_0, MSGBOX_AUTOCLOSE
+	setfollower 7, ALL_LAND, 0, PARTNER_TWIN
+	releaseall
+	end
+
+
+Route101_EventScript_SetTwin_Text_0:
+	.string "don't leave your twin behind$"
