@@ -546,252 +546,252 @@
       "x": 9,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 10,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 11,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 12,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 13,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 14,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 15,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 16,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 17,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 79,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "1",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 19,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 20,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 21,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 22,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 23,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 24,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 25,
       "y": 79,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 39,
-      "y": 62,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 39,
       "y": 63,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
-      "x": 12,
-      "y": 0,
+      "x": 39,
+      "y": 62,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 13,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 14,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 15,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 16,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 17,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 18,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 19,
-      "y": 0,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 33,
       "y": 0,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
       "var_value": "0",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     },
     {
       "type": "trigger",
       "x": 18,
-      "y": 79,
+      "y": 0,
       "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "1",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 16,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 0,
+      "elevation": 0,
+      "var": "VAR_ROUTE104NORTH_WILD_SET",
+      "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroupTrigger"
     }
   ],
   "bg_events": [

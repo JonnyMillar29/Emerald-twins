@@ -1013,6 +1013,19 @@ Route104_EventScript_Darian::
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+Route104_EventScript_ChangeEncounterGroupTrigger::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	goto_if_lt VAR_0x8009, 31, Route104_EventScript_ChangeEncounterGroupTrigger_2
+	goto_if_gt VAR_0x8009, 37, Route104_EventScript_ChangeEncounterGroupTrigger_3
+Route104_EventScript_ChangeEncounterGroupTrigger_1::
+	end
+Route104_EventScript_ChangeEncounterGroupTrigger_2::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 1
+	goto Route104_EventScript_ChangeEncounterGroupTrigger_1
+Route104_EventScript_ChangeEncounterGroupTrigger_3::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 0
+	goto Route104_EventScript_ChangeEncounterGroupTrigger_1
+
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"
 	.string "MR. BRINEY lives.\p"
