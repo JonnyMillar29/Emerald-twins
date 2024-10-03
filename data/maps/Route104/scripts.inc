@@ -24,6 +24,19 @@ Route104_OnTransition:
 	call Route104_EventScript_ChangeEncounterGroup
 	end
 
+Route104_EventScript_ChangeEncounterGroup::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	goto_if_lt VAR_0x8009, 31, Route104_EventScript_ChangeEncounterGroup_2
+	goto_if_gt VAR_0x8009, 37, Route104_EventScript_ChangeEncounterGroup_3
+Route104_EventScript_ChangeEncounterGroup_1::
+	return
+Route104_EventScript_ChangeEncounterGroup_2::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 1
+	goto Route104_EventScript_ChangeEncounterGroup_1
+Route104_EventScript_ChangeEncounterGroup_3::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 0
+	goto Route104_EventScript_ChangeEncounterGroup_1
+
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
 	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_EventScript_HideWhiteHerbFlorist
 	goto_if_unset FLAG_BADGE03_GET, Route104_EventScript_HideWhiteHerbFlorist
@@ -1172,21 +1185,3 @@ Route104_Text_BrendanPostBattle:
 	.string "making POKéMON battle.\p"
 	.string "Like MR. BRINEY, it's important to\n"
 	.string "become friends with your POKéMON.$"
-
-Route104_EventScript_ChangeEncounterGroup::
-	getplayerxy VAR_0x8008, VAR_0x8009
-	compare VAR_0x8009 > 34, 0
-	goto_if_ne Route104_EventScript_ChangeEncounterGroup_2
-	compare VAR_0x8009 < 34, 0
-	goto_if_ne Route104_EventScript_ChangeEncounterGroup_3
-Route104_EventScript_ChangeEncounterGroup_1:
-	end
-
-Route104_EventScript_ChangeEncounterGroup_2:
-	setvar VAR_ROUTE104_TRIGGERS, 0
-	goto Route104_EventScript_ChangeEncounterGroup_1
-
-Route104_EventScript_ChangeEncounterGroup_3:
-	setvar VAR_ROUTE104_TRIGGERS, 1
-	goto Route104_EventScript_ChangeEncounterGroup_1
-

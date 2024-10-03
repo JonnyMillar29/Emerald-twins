@@ -547,7 +547,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -556,7 +556,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -565,7 +565,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -574,7 +574,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -583,7 +583,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -592,7 +592,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -601,7 +601,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -610,7 +610,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -619,16 +619,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
-      "script": "Route104_EventScript_ChangeEncounterGroup"
-    },
-    {
-      "type": "trigger",
-      "x": 18,
-      "y": 79,
-      "elevation": 0,
-      "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -637,7 +628,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -646,7 +637,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -655,7 +646,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -664,7 +655,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -673,7 +664,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -682,7 +673,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -691,7 +682,7 @@
       "y": 79,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -700,7 +691,7 @@
       "y": 62,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -709,7 +700,7 @@
       "y": 63,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -718,7 +709,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -727,7 +718,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -736,7 +727,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -745,7 +736,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -754,7 +745,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -763,7 +754,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -772,7 +763,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -781,7 +772,7 @@
       "y": 0,
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
-      "var_value": "0",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     },
     {
@@ -791,6 +782,15 @@
       "elevation": 0,
       "var": "VAR_ROUTE104_TRIGGERS",
       "var_value": "0",
+      "script": "Route104_EventScript_ChangeEncounterGroup"
+    },
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 79,
+      "elevation": 0,
+      "var": "VAR_ROUTE104_TRIGGERS",
+      "var_value": "1",
       "script": "Route104_EventScript_ChangeEncounterGroup"
     }
   ],
