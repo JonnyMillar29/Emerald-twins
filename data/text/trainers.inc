@@ -57,17 +57,16 @@ Route102_Text_RickPostBattle:
 	.string "If you lock eyes with a TRAINER,\n"
 	.string "you have to challenge! It's a rule!$"
 
-Route102_Text_TianaIntro:
-	.string "I'm going to keep winning and aim\n"
-	.string "to be the best TRAINER.\p"
-	.string "Help me further my career!$"
+Route102_Text_TannerIntro:
+	.string "I'm doing a speedrun\n"
+	.string "with my pal Wooper.$"
 
-Route102_Text_TianaDefeated:
-	.string "I ended up furthering your career…$"
+Route102_Text_TannerDefeated:
+	.string "Nobody's faster than me...$"
 
-Route102_Text_TianaPostBattle:
-	.string "To keep winning my way up, I see that\n"
-	.string "I have to catch more POKéMON.$"
+Route102_Text_TannerPostBattle:
+	.string "You'll need the head start.\n"
+	.string "Wooper to the moon.$"
 
 Route103_Text_DaisyIntro:
 	.string "Did you feel the tug of our\n"

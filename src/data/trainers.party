@@ -8818,13 +8818,23 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Seedot
-Level: 6
+Cacnea @ Safety Goggles
+Ability: Water Absorb
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Rototiller
+-Poison Sting
+-Absorb
+-Growth
 
-Lotad
-Level: 6
+Paras @ Oran Berry
+Ability: Effect Spore
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Rototiller
+-Scratch
+-Stun Spore
+-Poison Powder
 
 === TRAINER_MIU_AND_YUKI ===
 Name: MIU & YUKI
@@ -11056,22 +11066,30 @@ Camerupt
 Level: 25
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
-=== TRAINER_TIANA ===
-Name: TIANA
-Class: Lass
-Pic: Lass
-Gender: Female
-Music: Female
+=== TRAINER_TANNER ===
+Name: TANNER
+Class: Pokemaniac
+Pic: Pokemaniac
+Gender: Male
+Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 4
+Wooper-Paldea @ Black Sludge
+Ability: Poison Point
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Mud Shot
+-Tail Whip
+-Tackle
 
-Shroomish
-Level: 4
+Wooper @ Mystic Water
+Ability: Water Absorb
+Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+-Water Gun
+-Tail Whip
+-Rain Dance
 
 === TRAINER_HALEY_1 ===
 Name: HALEY
