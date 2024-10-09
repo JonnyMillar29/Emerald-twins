@@ -22048,7 +22048,7 @@ F_TRAINER_FEMALE |
             },
             {
 #line 8830
-            .species = SPECIES_LOTAD,
+            .species = SPECIES_PARAS,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 8830
             .heldItem = ITEM_ORAN_BERRY,

@@ -22,10 +22,10 @@ Route116_EventScript_ChangeEncounterGroup::
 Route116_EventScript_ChangeEncounterGroup_1::
 	return
 Route116_EventScript_ChangeEncounterGroup_2::
-	setvar VAR_ROUTE116EAST_WILD_SET, 1
+	setvar VAR_ROUTE116EAST_WILD_SET, 0
 	goto Route116_EventScript_ChangeEncounterGroup_1
 Route116_EventScript_ChangeEncounterGroup_3::
-	setvar VAR_ROUTE116EAST_WILD_SET, 0
+	setvar VAR_ROUTE116EAST_WILD_SET, 1
 	goto Route116_EventScript_ChangeEncounterGroup_1
 
 Route116_EventScript_SetWandasBoyfriendPos::
@@ -127,6 +127,19 @@ Route116_Movement_DevonEmployeeExitEast:
 	walk_left
 	walk_left
 	step_end
+
+Route116_EventScript_ChangeEncounterGroupTrigger::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	goto_if_lt VAR_0x8008, 60, Route116_EventScript_ChangeEncounterGroupTrigger_2
+	goto_if_gt VAR_0x8008, 64, Route116_EventScript_ChangeEncounterGroupTrigger_3
+Route116_EventScript_ChangeEncounterGroupTrigger_1::
+	end
+Route116_EventScript_ChangeEncounterGroupTrigger_2::
+	setvar VAR_ROUTE116EAST_WILD_SET, 0
+	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
+Route116_EventScript_ChangeEncounterGroupTrigger_3::
+	setvar VAR_ROUTE116EAST_WILD_SET, 1
+	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
 
 Route116_EventScript_RouteSignRustboro::
 	msgbox Route116_Text_RouteSignRustboro, MSGBOX_SIGN
@@ -364,19 +377,6 @@ Route116_EventScript_Johnson::
 	trainerbattle_single TRAINER_JOHNSON, Route116_Text_JohnsonIntro, Route116_Text_JohnsonDefeat
 	msgbox Route116_Text_JohnsonPostBattle, MSGBOX_AUTOCLOSE
 	end
-
-Route116_EventScript_ChangeEncounterGroupTrigger::
-	getplayerxy VAR_0x8008, VAR_0x8009
-	goto_if_lt VAR_0x8008, 60, Route116_EventScript_ChangeEncounterGroupTrigger_2
-	goto_if_gt VAR_0x8008, 64, Route116_EventScript_ChangeEncounterGroupTrigger_3
-Route116_EventScript_ChangeEncounterGroupTrigger_1::
-	return
-Route116_EventScript_ChangeEncounterGroupTrigger_2::
-	setvar VAR_ROUTE116EAST_WILD_SET, 0
-	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
-Route116_EventScript_ChangeEncounterGroupTrigger_3::
-	setvar VAR_ROUTE116EAST_WILD_SET, 1
-	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
 
 Route116_Text_ScoundrelMadeOffWithPeeko:
 	.string "Ohhh, what am I to do?\p"
