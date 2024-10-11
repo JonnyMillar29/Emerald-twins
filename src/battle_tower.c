@@ -39,7 +39,6 @@
 #include "constants/trainers.h"
 #include "constants/event_objects.h"
 #include "constants/moves.h"
-#include "load_save.h"
 #include <math.h>
 
 // EWRAM vars.
