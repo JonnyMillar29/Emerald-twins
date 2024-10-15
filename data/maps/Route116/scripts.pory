@@ -128,19 +128,6 @@ Route116_Movement_DevonEmployeeExitEast:
 	walk_left
 	step_end
 
-Route116_EventScript_ChangeEncounterGroupTrigger::
-	getplayerxy VAR_0x8008, VAR_0x8009
-	goto_if_lt VAR_0x8008, 60, Route116_EventScript_ChangeEncounterGroupTrigger_2
-	goto_if_gt VAR_0x8008, 64, Route116_EventScript_ChangeEncounterGroupTrigger_3
-Route116_EventScript_ChangeEncounterGroupTrigger_1::
-	end
-Route116_EventScript_ChangeEncounterGroupTrigger_2::
-	setvar VAR_ROUTE116EAST_WILD_SET, 0
-	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
-Route116_EventScript_ChangeEncounterGroupTrigger_3::
-	setvar VAR_ROUTE116EAST_WILD_SET, 1
-	goto Route116_EventScript_ChangeEncounterGroupTrigger_1
-
 Route116_EventScript_RouteSignRustboro::
 	msgbox Route116_Text_RouteSignRustboro, MSGBOX_SIGN
 	end
