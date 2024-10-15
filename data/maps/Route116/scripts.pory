@@ -15,19 +15,6 @@ Route116_OnTransition:
 	call_if_eq VAR_ABNORMAL_WEATHER_LOCATION, ABNORMAL_WEATHER_ROUTE_116_SOUTH, AbnormalWeather_StartGroudonWeather
 	end
 
-Route116_EventScript_ChangeEncounterGroup::
-	getplayerxy VAR_0x8008, VAR_0x8009
-	goto_if_lt VAR_0x8008, 60, Route116_EventScript_ChangeEncounterGroup_2
-	goto_if_gt VAR_0x8008, 64, Route116_EventScript_ChangeEncounterGroup_3
-Route116_EventScript_ChangeEncounterGroup_1::
-	return
-Route116_EventScript_ChangeEncounterGroup_2::
-	setvar VAR_ROUTE116EAST_WILD_SET, 0
-	goto Route116_EventScript_ChangeEncounterGroup_1
-Route116_EventScript_ChangeEncounterGroup_3::
-	setvar VAR_ROUTE116EAST_WILD_SET, 1
-	goto Route116_EventScript_ChangeEncounterGroup_1
-
 Route116_EventScript_SetWandasBoyfriendPos::
 	setobjectxyperm LOCALID_WANDAS_BF_OUTSIDE, 38, 10
 	return
