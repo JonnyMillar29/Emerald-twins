@@ -1,3 +1,4 @@
+
 @ Note: LOCALID_UNION_ROOM_PLAYER_# are local ids for this map used elsewhere. They're defined in event_objects.h
 
 UnionRoom_MapScripts::
