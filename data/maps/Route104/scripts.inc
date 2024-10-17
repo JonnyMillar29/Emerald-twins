@@ -21,7 +21,21 @@ Route104_OnTransition:
 	call Common_EventScript_SetupRivalGfxId
 	call Route104_EventScript_TrySetRivalPos
 	call Route104_EventScript_ShowOrHideWhiteHerbFlorist
+	call Route104_EventScript_ChangeEncounterGroup
 	end
+
+Route104_EventScript_ChangeEncounterGroup::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	goto_if_lt VAR_0x8009, 31, Route104_EventScript_ChangeEncounterGroup_2
+	goto_if_gt VAR_0x8009, 37, Route104_EventScript_ChangeEncounterGroup_3
+Route104_EventScript_ChangeEncounterGroup_1::
+	return
+Route104_EventScript_ChangeEncounterGroup_2::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 1
+	goto Route104_EventScript_ChangeEncounterGroup_1
+Route104_EventScript_ChangeEncounterGroup_3::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 0
+	goto Route104_EventScript_ChangeEncounterGroup_1
 
 Route104_EventScript_ShowOrHideWhiteHerbFlorist::
 	goto_if_unset FLAG_MET_PRETTY_PETAL_SHOP_OWNER, Route104_EventScript_HideWhiteHerbFlorist
@@ -998,6 +1012,19 @@ Route104_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat
 	msgbox Route104_Text_DarianPostBattle, MSGBOX_AUTOCLOSE
 	end
+
+Route104_EventScript_ChangeEncounterGroupTrigger::
+	getplayerxy VAR_0x8008, VAR_0x8009
+	goto_if_lt VAR_0x8009, 31, Route104_EventScript_ChangeEncounterGroupTrigger_2
+	goto_if_gt VAR_0x8009, 37, Route104_EventScript_ChangeEncounterGroupTrigger_3
+Route104_EventScript_ChangeEncounterGroupTrigger_1::
+	end
+Route104_EventScript_ChangeEncounterGroupTrigger_2::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 1
+	goto Route104_EventScript_ChangeEncounterGroupTrigger_1
+Route104_EventScript_ChangeEncounterGroupTrigger_3::
+	setvar VAR_ROUTE104NORTH_WILD_SET, 0
+	goto Route104_EventScript_ChangeEncounterGroupTrigger_1
 
 Route104_Text_BrineyLivesInSeasideCottage:
 	.string "That seaside cottage is where\n"

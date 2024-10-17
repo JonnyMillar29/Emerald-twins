@@ -65,16 +65,16 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 8,
-      "y": 7,
+      "graphics_id": "OBJ_EVENT_GFX_MANIAC",
+      "x": 2,
+      "y": 6,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route102_EventScript_Tiana",
+      "script": "Route102_EventScript_Tanner",
       "flag": "0"
     },
     {
@@ -143,8 +143,12 @@
       "flag": "0"
     }
   ],
-  "warp_events": [],
-  "coord_events": [],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+
+  ],
   "bg_events": [
     {
       "type": "sign",
