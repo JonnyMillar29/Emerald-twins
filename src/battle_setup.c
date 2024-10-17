@@ -732,7 +732,7 @@ static void CB2_EndWildBattle(void)
     if (gSaveBlock2Ptr->follower.battlePartner && F_FLAG_PARTNER_WILD_BATTLES != 0
      && (FlagGet(F_FLAG_PARTNER_WILD_BATTLES) || F_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
     {
-        LoadLastThreeMons();
+        LoadPlayerPartyAfterPartnerBattle();
     }
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike())
@@ -1480,7 +1480,7 @@ static void CB2_EndTrainerBattle(void)
     HandleBattleVariantEndParty();
 
     if (gSaveBlock2Ptr->follower.battlePartner)
-        LoadLastThreeMons();
+        LoadPlayerPartyAfterPartnerBattle();
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
     {

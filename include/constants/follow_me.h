@@ -33,7 +33,7 @@
 #define FOLLOWER_PARTY_PREVIEW              TRUE
 
 // If set to TRUE, the player will turn to face the follower when they exit a doorway.
-#define FACE_FOLLOWER_ON_DOOR_EXIT          TRUE
+#define FACE_FOLLOWER_ON_DOOR_EXIT          FALSE
 
 
 
