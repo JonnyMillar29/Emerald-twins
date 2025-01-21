@@ -4844,29 +4844,41 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Machop
+Hitmonlee
+Ability: Unburden
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Karate Chop
+- Helping Hand
+- Sucker Punch
+- Double Kick
 - Low Kick
-- Seismic Toss
-- Bulk Up
 
-Meditite
+Hitmonchan @ Punching Glove
+Ability: Iron Fist
 Level: 16
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-- Focus Punch
-- Light Screen
-- Reflect
-- Bulk Up
+- Helping Hand
+- Bullet Punch
+- Fake Out
+- Tackle
 
-Makuhita @ Sitrus Berry
+Heracross @ Life Orb
+Ability: Moxie
+Level: 17
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Pounce
+- Arm Thrust
+- Aerial Ace
+- Fury Attack
+
+Hitmontop @ Assualt Vest
+Ability: Technician
 Level: 19
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Arm Thrust
-- Vital Throw
-- Reversal
-- Bulk Up
+- Fake Out
+- Triple Kick
+- Rapid Spin
+- Gyro Ball 
 
 === TRAINER_WATTSON_1 ===
 Name: WATTSON
@@ -4878,37 +4890,38 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Voltorb
+Chinchou @ Rindo Berry
+Ability: Volt Absorb
 Level: 20
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Rollout
-- Spark
-- Self Destruct
-- Shock Wave
+- Confuse Ray
+- Bubble Beam
+- Thunder Wave
+- Electro Ball
 
-Electrike
-Level: 20
+Geodude-Alola @ Magnet
+Ability: Galvanise
+Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Shock Wave
-- Leer
-- Quick Attack
-- Howl
+- Self-Destruct
 
-Magneton
+Vikavolt @ Leftovers
+Ability: Levitate
 Level: 22
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
-- Supersonic
-- Shock Wave
+- Discharge
+- Struggle Bug
 - Thunder Wave
-- Sonic Boom
+- Charge
 
-Manectric @ Sitrus Berry
-Level: 24
+Raichu-Alola @ Shuca Berry
+Ability: Surge Surfer
+Level: 22
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Quick Attack
-- Thunder Wave
-- Shock Wave
-- Howl
+- Nasty Polt
+- Rising Voltage
+- Stored Power
+- Draining Kiss
 
 === TRAINER_FLANNERY_1 ===
 Name: FLANNERY
@@ -4920,37 +4933,40 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Numel
+Houndoom @ Chople Berry
+Ability: Flash Fire
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Take Down
-- Magnitude
-- Sunny Day
+- Incinerate
+- Bite
+- Roar
+- Nasty Polt
 
-Slugma
+Numel @ Passho Berry
+Ability: Simple
 Level: 24
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Overheat
-- Smog
-- Light Screen
-- Sunny Day
+- Growth
+- Amnesia
+- Bulldoze
+- Lava Plume
 
-Camerupt
+Charmeleon @ Charcoal
+Ability: Solar Power
 Level: 26
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Tackle
-- Sunny Day
-- Attract
+- Slash
+- Fire Spin
+- Dragonbreath
+- Smokescreen
 
-Torkoal @ White Herb
+Scovillain @ Life Orb
 Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Overheat
-- Sunny Day
-- Body Slam
-- Attract
+- Growth
+- Headbutt
+- Razor Leaf
+- Flamethrower
 
 === TRAINER_NORMAN_1 ===
 Name: NORMAN
@@ -4962,37 +4978,41 @@ Items: Hyper Potion / Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Spinda
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Teeter Dance
-- Psybeam
-- Facade
-- Encore
-
-Vigoroth
-Level: 27
-IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Facade
-- Encore
-- Feint Attack
-
-Linoone
+Chansey @ Eviolite
+Ability: Natural Cure
 Level: 29
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- Slash
-- Belly Drum
-- Facade
-- Headbutt
+- Skill Swap
+- Toxic
+- Seismic Toss
+- Stealth Rock
 
-Slaking @ Sitrus Berry
+Loudred @ Chople Berry
+Ability: Soundproof
+Level: 27
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Work Up
+- Rest
+- Sleep Talk
+- Stomp
+
+Slaking @ Silf Scarf
+Ability: Truant
 Level: 31
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Counter
-- Yawn
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Entrainment
+- Protect
 - Facade
-- Feint Attack
+- Throat Chop
+
+Loudred @ Throat Spray
+Ability: Scrappy
+Level: 27
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Uproar
+- Hyper Voice
+- Screech
+- Supersonic
 
 === TRAINER_WINONA_1 ===
 Name: WINONA
