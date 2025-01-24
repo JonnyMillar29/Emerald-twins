@@ -15,7 +15,7 @@
         .trainerClass = TRAINER_CLASS_PKMN_TRAINER_1,
 #line 4
         .trainerPic = TRAINER_BACK_PIC_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 6
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 0,
@@ -32,7 +32,7 @@
         .trainerClass = TRAINER_CLASS_RIVAL,
 #line 11
         .trainerPic = TRAINER_BACK_PIC_STEVEN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 #line 13
             TRAINER_ENCOUNTER_MUSIC_MALE,
         .partySize = 3,
@@ -110,14 +110,14 @@
         .trainerName = _("TWIN"),
 #line 48
         .trainerPic = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
-        .encounterMusic_gender = 
+        .encounterMusic_gender =
 0,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
 #line 51
-            .species = SPECIES_GEODUDE_ALOLAN,
+            .species = SPECIES_GEODUDE_ALOLA,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 53
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
