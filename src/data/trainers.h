@@ -12056,7 +12056,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_HITMONTOP,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4874
-            .heldItem = ITEM_ASSUALT_VEST,
+            .heldItem = ITEM_ASSAULT_VEST,
 #line 4877
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 4875
@@ -12127,7 +12127,7 @@ F_TRAINER_FEMALE |
 #line 4905
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 4903
-            .ability = ABILITY_GALVANISE,
+            .ability = ABILITY_GALVANIZE,
 #line 4904
             .lvl = 24,
             .nature = NATURE_HARDY,
@@ -12175,7 +12175,7 @@ F_TRAINER_FEMALE |
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,
             .moves = {
 #line 4921
-                MOVE_NASTY_POLT,
+                MOVE_NASTY_PLOT,
                 MOVE_RISING_VOLTAGE,
                 MOVE_STORED_POWER,
                 MOVE_DRAINING_KISS,
@@ -12225,7 +12225,7 @@ F_TRAINER_FEMALE |
                 MOVE_INCINERATE,
                 MOVE_BITE,
                 MOVE_ROAR,
-                MOVE_NASTY_POLT,
+                MOVE_NASTY_PLOT,
             },
             },
             {
@@ -12364,7 +12364,7 @@ F_TRAINER_FEMALE |
             .species = SPECIES_SLAKING,
             .gender = TRAINER_MON_RANDOM_GENDER,
 #line 4999
-            .heldItem = ITEM_SILF_SCARF,
+            .heldItem = ITEM_SILK_SCARF,
 #line 5002
             .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
 #line 5000
