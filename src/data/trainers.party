@@ -5333,9 +5333,22 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
-Level: 9
+Sandygast @ Weakness Policy
+Ability: Water Compaction
+Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Absorb
+- Astonish
+- Sand Tomb
+
+Accelgor
+Ability: Unburden
+Level: 14
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Water Shruiken
+- Acid
+- Yawn
+- Absorb
 
 === TRAINER_GEORGIA ===
 Name: GEORGIA
@@ -6443,8 +6456,8 @@ Barboach
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_ELLIOT_1 ===
-Name: ELLIOT
+=== TRAINER_BRAYDEN_1 ===
+Name: BRAYDEN
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6452,20 +6465,17 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Onix @ Quick Claw
+Ability: Sturdy
 Level: 10
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Harden
+- Tackle
+- Smack Down
+- Rock Polish
 
-Tentacool
-Level: 7
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Magikarp
-Level: 10
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-=== TRAINER_NED ===
-Name: NED
+=== TRAINER_JACOB ===
+Name: JACOB
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6473,9 +6483,14 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Absol @ Life Orb
+Ability: Super Luck
 Level: 11
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Quick Attack
+- Double Team
+- Knock Off
+- Leer
 
 === TRAINER_DALE ===
 Name: DALE
@@ -6562,8 +6577,8 @@ Tentacruel
 Level: 25
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ELLIOT_2 ===
-Name: ELLIOT
+=== TRAINER_BRAYDEN_2 ===
+Name: BRAYDEN
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6583,8 +6598,8 @@ Gyarados
 Level: 27
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
-=== TRAINER_ELLIOT_3 ===
-Name: ELLIOT
+=== TRAINER_BRAYDEN_3 ===
+Name: BRAYDEN
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6608,8 +6623,8 @@ Gyarados
 Level: 29
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-=== TRAINER_ELLIOT_4 ===
-Name: ELLIOT
+=== TRAINER_BRAYDEN_4 ===
+Name: BRAYDEN
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -6633,8 +6648,8 @@ Gyarados
 Level: 31
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
-=== TRAINER_ELLIOT_5 ===
-Name: ELLIOT
+=== TRAINER_BRAYDEN_5 ===
+Name: BRAYDEN
 Class: Fisherman
 Pic: Fisherman
 Gender: Male
@@ -11462,13 +11477,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nincada
-Level: 6
+Cutiefly @ Light Clay
+Ability: Sweet Veil
+Level: 8
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Reflect
+- Light Screen
+- Sticky Web
+- Fairy Wind
 
-Nincada
-Level: 6
+Venonat @ Wide Lens
+Ability: Compund Eyes
+Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rage Powder
+- Supersonic
+- Disable
+- Tackle
+
+Joltik @ Assault Vest
+Ability: Unnerve
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Absorb
+- Bug Bite
+- Fury Cutter
+- Electroweb
+
+Yanma @ Bright Powder
+Ability: Speed Boost
+Level: 11
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Bright Powder
+- Protect
+- Double Team
+- Quick Attack
 
 === TRAINER_JAMES_2 ===
 Name: JAMES
@@ -13075,9 +13118,23 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Magikarp
+Cacnea @ Safety Goggles
+Ability: Water Absorb
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rototiller
+- Poison Sting
+- Absorb
+- Growth
+
+Paras @ Oran Berry
+Ability: Effect Spore
+Level: 9
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rototiller
+- Scratch
+- Stun Spore
+- Poison Powder
 
 === TRAINER_HAILEY ===
 Name: HAILEY
