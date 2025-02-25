@@ -17,7 +17,7 @@ Route106_EventScript_Kyla::
 	end
 
 Route106_EventScript_Brayden::
-	trainerbattle_single TRAINER_BRAYDEN, Route106_Text_BraydenIntro, Route106_Text_BraydenDefeated, Route106_EventScript_BraydenRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_BRAYDEN_1, Route106_Text_BraydenIntro, Route106_Text_BraydenDefeated, Route106_EventScript_BraydenRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_BraydenRematch
 	msgbox Route106_Text_BraydenPostBattle, MSGBOX_DEFAULT

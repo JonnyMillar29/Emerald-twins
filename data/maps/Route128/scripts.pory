@@ -232,7 +232,7 @@ Route128_EventScript_Ruben::
 	end
 
 Route128_EventScript_Wayne::
-	trainerbattle_single TRAINER_WAYNE, Route128_Text_WayneIntro, Route128_Text_WayneDefeat
+	trainerbattle_single TRAINER_WAYNE, Route128_Text_WayneIntro, Route128_Text_Waynedefeated
 	msgbox Route128_Text_WaynePostBattle, MSGBOX_AUTOCLOSE
 	end
 

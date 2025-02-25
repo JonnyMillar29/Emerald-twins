@@ -202,9 +202,9 @@ Route110_EventScript_Dale::
 	msgbox Route110_Text_DalePostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route110_EventScript_Jacob::
-	trainerbattle_single TRAINER_JACOB, Route110_Text_JacobIntro, Route110_Text_JacobDefeated
-	msgbox Route110_Text_JacobPostBattle, MSGBOX_AUTOCLOSE
+Route110_EventScript_Brian::
+	trainerbattle_single TRAINER_BRIAN, Route110_Text_BrianIntro, Route110_Text_BrianDefeated
+	msgbox Route110_Text_BrianPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route110_EventScript_Anthony::

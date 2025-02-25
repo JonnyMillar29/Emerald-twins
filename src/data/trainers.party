@@ -6706,8 +6706,8 @@ Gyarados
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-=== TRAINER_JACOB ===
-Name: JACOB
+=== TRAINER_BRIAN ===
+Name: Brian
 Class: Triathlete
 Pic: Cycling Triathlete M
 Gender: Male
@@ -11487,7 +11487,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fairy Wind
 
 Venonat @ Wide Lens
-Ability: Compund Eyes
+Ability: Compound Eyes
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rage Powder
@@ -11508,7 +11508,7 @@ Yanma @ Bright Powder
 Ability: Speed Boost
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Bright Powder
+- Pounce
 - Protect
 - Double Team
 - Quick Attack
