@@ -533,47 +533,36 @@ Route105_Text_JosuePostBattle:
 	.string "Yeah, for me, the sky is a much better\n"
 	.string "match than the sea.$"
 
-Route106_Text_ElliotIntro:
-	.string "Which do you prefer, fishing in the\n"
-	.string "sea or a stream?$"
+Route106_Text_BraydenIntro:
+	.string "I hope you don't have a Jynx$"
 
-Route106_Text_ElliotDefeated:
-	.string "Like in deep-sea fishing, I lost\n"
-	.string "spectacularly!$"
+Route106_Text_BraydenDefeated:
+	.string "At least it wasn't on stream$"
 
-Route106_Text_ElliotPostBattle:
-	.string "Fishing is the greatest whether it's\n"
-	.string "in the sea or a stream.\l"
-	.string "You agree with me, right?$"
+Route106_Text_BraydenPostBattle:
+	.string "We'll get him next time hey Jacob?$"
 
-Route106_Text_ElliotRegister:
-	.string "Fishing's great, but so is battling.\n"
+Route106_Text_BraydenRegister:
 	.string "If you don't mind, can we meet again?$"
 
-Route106_Text_ElliotRematchIntro:
-	.string "I caught a bunch of POKéMON fishing.\n"
+Route106_Text_BraydenRematchIntro:
 	.string "I'll show you an impressive battle!$"
 
-Route106_Text_ElliotRematchDefeated:
+Route106_Text_BraydenRematchDefeated:
 	.string "I lost again spectacularly!$"
 
-Route106_Text_ElliotRematchPostBattle:
+Route106_Text_BraydenRematchPostBattle:
 	.string "Win or lose, POKéMON are the greatest!\n"
 	.string "You agree with me, right?$"
 
-Route106_Text_NedIntro:
-	.string "What do people do if they need to go\n"
-	.string "to a washroom?\p"
-	.string "What if my ROD hooks a big one while\n"
-	.string "I'm in the washroom? I just can't go…$"
+Route106_Text_JacobIntro:
+	.string "Testing 123$"
 
-Route106_Text_NedDefeated:
-	.string "I lost because I'm trying to not go\n"
-	.string "to the washroom…$"
+Route106_Text_JacobDefeated:
+	.string "Testing 123$"
 
-Route106_Text_NedPostBattle:
-	.string "Oh, no! I've got this feeling I'll hook\n"
-	.string "a big one!$"
+Route106_Text_JacobPostBattle:
+	.string "Testing 123$"
 
 Route106_Text_DouglasIntro:
 	.string "Hahahah! I'm a lousy runner, but in\n"
@@ -1002,15 +991,15 @@ Route109_Text_ElijahPostBattle:
 	.string "is the perfect setting!\p"
 	.string "I guess I'll head for SLATEPORT.$"
 
-Route110_Text_JacobIntro:
+Route110_Text_BrianIntro:
 	.string "Whoa! Watch it!\n"
 	.string "I guess you're not used to BIKE racing.$"
 
-Route110_Text_JacobDefeated:
+Route110_Text_BrianDefeated:
 	.string "Whoa!\n"
 	.string "My brakes failed!$"
 
-Route110_Text_JacobPostBattle:
+Route110_Text_BrianPostBattle:
 	.string "Flat tires and brake problems can\n"
 	.string "cause serious injury!\l"
 	.string "Inspect your BIKE for problems!$"
@@ -1338,7 +1327,7 @@ Route111_Text_IreneIntro:
 	.string "I don't know where you're going,\n"
 	.string "but would you like to battle?$"
 
-Route111_Text_IreneDefeat:
+Route111_Text_IreneDefeated:
 	.string "Oh, you're disgustingly good!$"
 
 Route111_Text_IrenePostBattle:
@@ -1640,7 +1629,7 @@ Route113_Text_MadelineIntro:
 	.string "filthy, yucky volcanic ash from\l"
 	.string "my dear NUMEL.$"
 
-Route113_Text_MadelineDefeat:
+Route113_Text_Madelinedefeated:
 	.string "Huff, huff…\n"
 	.string "I am exhausted…$"
 
@@ -1817,7 +1806,7 @@ Route114_Text_ShaneIntro:
 	.string "But the best of all are the POKéMON\n"
 	.string "battles!$"
 
-Route114_Text_ShaneDefeat:
+Route114_Text_Shanedefeated:
 	.string "Way too strong!$"
 
 Route114_Text_ShanePostBattle:
@@ -2137,7 +2126,7 @@ Route115_Text_HeleneIntro:
 	.string "My POKéMON have black belt-level\n"
 	.string "strength!$"
 
-Route115_Text_HeleneDefeat:
+Route115_Text_Helenedefeated:
 	.string "This is too humiliating!$"
 
 Route115_Text_HelenePostBattle:
@@ -2162,7 +2151,7 @@ Route115_Text_MarleneIntro:
 	.string "You've disturbed my meditation…\n"
 	.string "You'll be punished for it.$"
 
-Route115_Text_MarleneDefeat:
+Route115_Text_Marlenedefeated:
 	.string "You've broken my concentration!$"
 
 Route115_Text_MarlenePostBattle:
@@ -2797,7 +2786,7 @@ Route119_Text_CatherineIntro:
 	.string "For someone on an adventure,\n"
 	.string "you're traveling awfully light.$"
 
-Route119_Text_CatherineDefeat:
+Route119_Text_CatherineDefeated:
 	.string "Accidents happen when you're not\n"
 	.string "prepared!$"
 
@@ -4231,7 +4220,7 @@ Route128_Text_WayneIntro:
 	.string "caught myself a POKéMON that knows\l"
 	.string "the move WATERFALL to crest the falls.$"
 
-Route128_Text_WayneDefeat:
+Route128_Text_Waynedefeated:
 	.string "I'm crestfallen!$"
 
 Route128_Text_WaynePostBattle:

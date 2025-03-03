@@ -16,30 +16,30 @@ Route106_EventScript_Kyla::
 	msgbox Route106_Text_KylaPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route106_EventScript_Elliot::
-	trainerbattle_single TRAINER_ELLIOT_1, Route106_Text_ElliotIntro, Route106_Text_ElliotDefeated, Route106_EventScript_ElliotRegisterMatchCallAfterBattle
+Route106_EventScript_Brayden::
+	trainerbattle_single TRAINER_BRAYDEN_1, Route106_Text_BraydenIntro, Route106_Text_BraydenDefeated, Route106_EventScript_BraydenRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
-	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_ElliotRematch
-	msgbox Route106_Text_ElliotPostBattle, MSGBOX_DEFAULT
+	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_BraydenRematch
+	msgbox Route106_Text_BraydenPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
-Route106_EventScript_ElliotRegisterMatchCallAfterBattle::
+Route106_EventScript_BraydenRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle
 	waitmovement 0
-	msgbox Route106_Text_ElliotRegister, MSGBOX_DEFAULT
-	register_matchcall TRAINER_ELLIOT_1
+	msgbox Route106_Text_BraydenRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_BRAYDEN_1
 	release
 	end
 
-Route106_EventScript_ElliotRematch::
-	trainerbattle_rematch TRAINER_ELLIOT_1, Route106_Text_ElliotRematchIntro, Route106_Text_ElliotRematchDefeated
-	msgbox Route106_Text_ElliotRematchPostBattle, MSGBOX_AUTOCLOSE
+Route106_EventScript_BraydenRematch::
+	trainerbattle_rematch TRAINER_BRAYDEN_1, Route106_Text_BraydenRematchIntro, Route106_Text_BraydenRematchDefeated
+	msgbox Route106_Text_BraydenRematchPostBattle, MSGBOX_AUTOCLOSE
 	end
 
-Route106_EventScript_Ned::
-	trainerbattle_single TRAINER_NED, Route106_Text_NedIntro, Route106_Text_NedDefeated
-	msgbox Route106_Text_NedPostBattle, MSGBOX_AUTOCLOSE
+Route106_EventScript_Jacob::
+	trainerbattle_single TRAINER_JACOB, Route106_Text_JacobIntro, Route106_Text_JacobDefeated
+	msgbox Route106_Text_JacobPostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route106_Text_TrainerTips:

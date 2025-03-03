@@ -121,12 +121,12 @@ Route115_EventScript_Alix::
 	end
 
 Route115_EventScript_Helene::
-	trainerbattle_single TRAINER_HELENE, Route115_Text_HeleneIntro, Route115_Text_HeleneDefeat
+	trainerbattle_single TRAINER_HELENE, Route115_Text_HeleneIntro, Route115_Text_Helenedefeated
 	msgbox Route115_Text_HelenePostBattle, MSGBOX_AUTOCLOSE
 	end
 
 Route115_EventScript_Marlene::
-	trainerbattle_single TRAINER_MARLENE, Route115_Text_MarleneIntro, Route115_Text_MarleneDefeat
+	trainerbattle_single TRAINER_MARLENE, Route115_Text_MarleneIntro, Route115_Text_Marlenedefeated
 	msgbox Route115_Text_MarlenePostBattle, MSGBOX_AUTOCLOSE
 	end
 

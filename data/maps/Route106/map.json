@@ -52,29 +52,29 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 51,
-      "y": 14,
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 52,
+      "y": 15,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "4",
-      "script": "Route106_EventScript_Elliot",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route106_EventScript_Brayden",
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FISHERMAN",
-      "x": 65,
-      "y": 14,
+      "graphics_id": "OBJ_EVENT_GFX_POKEFAN_M",
+      "x": 52,
+      "y": 18,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "3",
-      "script": "Route106_EventScript_Ned",
+      "trainer_sight_or_berry_tree_id": "2",
+      "script": "Route106_EventScript_Jacob",
       "flag": "0"
     },
     {
@@ -114,8 +114,8 @@
     },
     {
       "type": "hidden_item",
-      "x": 53,
-      "y": 12,
+      "x": 47,
+      "y": 18,
       "elevation": 0,
       "item": "ITEM_STARDUST",
       "flag": "FLAG_HIDDEN_ITEM_ROUTE_106_STARDUST"
