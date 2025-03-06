@@ -533,14 +533,23 @@ Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mightyena
-Level: 34
+Cramorant @ Water Gem
+Ability: Gulp Missile
+Level: 35
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Surf
+- Ice Beam
+- Acrobatics
+- Roost
 
-Golbat
-Level: 34
+Toxapex @ Black Sludge
+Ability: Merciless
+Level: 37
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
+- Toxic
+- VenoShock
+- Baneful Bunker
+- Protect
 === TRAINER_ZANDER ===
 Name: ZANDER
 Class: Black Belt
@@ -563,13 +572,23 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Carvanha
+Qwilfish_Hisuian @ Quick Claw
+Ability: Intimidate
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Barb Barrage
+- Bite
+- Fell Stinger
+- Minimize
 
-Mightyena
+Lombre @ Miricle Seed
+Ability: Swift Swim
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bubble Beam
+- Mega Drain
+- Fury Swipes
+- Knock Off
 
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
@@ -580,13 +599,32 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Sharpedo
+Overqwil @ Quick Claw
+Ability: Intimidate
 Level: 37
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Toxic Spikes
+- Taunt
+- Poison Jab
+- Liquidation
 
-Mightyena
-Level: 37
+Dhelmise @ Assault Vest
+Ability: Steelworker
+Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Power Whip
+- Anchor Shot
+- Shadow Claw
+- Rapid Spin
+
+Ludicolo @ Leftovers
+Ability: Swift Swim
+Level: 41
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Giga Drain
+- Surf
+- Ice Beam
+- Substitute
 
 === TRAINER_ARCHIE ===
 Name: ARCHIE
@@ -4595,45 +4633,59 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability / Setup First Turn
 Mugshot: Purple
 
-Mightyena
+Absol @ Black Glasses
+Ability: Justified
 Level: 46
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Roar
-- Double Edge
-- Sand Attack
+- Swords Dance
+- Night Slash
+- Sucker Punch
+- Detect
+
+Bisharp @ Eviolite
+Ability: Defiant
+Level: 46
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Snarl
+- Beat Up
+- Swords Dance
+- Iron Head
+
+Weavile @ Bright Powder
+Ability: Pressure
+Level: 46
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Hone Claws
+- Triple Axel
+- Metal Claw
+- Night Slash
+
+Pangoro @ Quick Claw
+Ability: Scrappy
+Level: 48
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Parting Shot
+- Body Slam
 - Crunch
+- Vital Throw
 
-Shiftry
+Drapion @ Razor Claw
+Ability: Sniper
 Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Torment
-- Double Team
-- Swagger
-- Extrasensory
-
-Cacturne
-Level: 46
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Leech Seed
-- Feint Attack
-- Needle Arm
-- Cotton Spore
-
-Crawdaunt
-Level: 48
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Surf
-- Swords Dance
-- Strength
-- Facade
-
-Absol @ Sitrus Berry
-Level: 49
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Rock Slide
-- Swords Dance
-- Slash
+- Acupressure
+- Night Slash
+- Cross Poison
+- X Scissor
+
+Crawdaunt @ Life Orb
+Ability: Adaptability
+Level: 48
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Dragon Dance
+- Liquidation
+- Crunch
+- Avalanche
 
 === TRAINER_PHOEBE ===
 Name: PHOEBE
@@ -4646,45 +4698,59 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Dusclops
+Drifblim @ Wide Lens
+Ability: Aftermath
 Level: 48
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Curse
+- Thunder Wave
+- Hex
+- Air Cutter
+- Calm Mind
+
+Sableye @ Rocky Helmet
+Ability: Prankster
+Level: 48
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Will O Wisp
+- Knock Off
+- Recover
 - Protect
 
-Banette
+Dhelmise @ Assault Vest
+Ability: Steelworker
 Level: 49
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Grudge
+- Anchor Shot
+- Shadow Claw
+- Power Whip
+- Rapid Spin
+
+Misdreavus @ Eviolite
+Ability: Levitate
+Level: 49
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Hex
+- Mean Look
 - Will O Wisp
-- Feint Attack
+- Destiny Bond
 
-Sableye
+Mimikyu @ Life Orb
+Ability: Disguise
 Level: 50
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Double Team
-- Night Shade
-- Feint Attack
-
-Banette
-Level: 49
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Facade
-
-Dusclops @ Sitrus Berry
-Level: 51
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Ice Beam
-- Rock Slide
-- Earthquake
+- Drain Punch
+- Swords Dance
+- Shadow Sneak
+- Play Rough
+
+Sinistcha @ Big Root
+Ability: Hospitality
+Level: 50
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Strength Sap
+- Matcha Gotcha
+- Stun Spore
+- Hex
 
 === TRAINER_GLACIA ===
 Name: GLACIA
@@ -4697,45 +4763,59 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Sealeo
+Beartic @ Persim Berry
+Ability: Slush Rush
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Encore
-- Body Slam
-- Hail
-- Ice Ball
+- Icicle Crash
+- Slash
+- Swagger
+- Thrash
 
-Glalie
+Froslass @ Light Clay
+Ability: Snow Cloak
 Level: 50
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Light Screen
-- Crunch
-- Icy Wind
+- Will O Wisp
+- Aurora Veil
+- Double Team
 - Ice Beam
 
-Sealeo
+Glaceon @ Leftovers
+Ability: Ice Body
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Attract
-- Double Edge
-- Hail
 - Blizzard
+- Icy Wind
+- Wish
+- Protect
 
-Glalie
+Cloyster @ King's Rock
+Ability: Skill Link
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Explosion
-- Hail
-- Ice Beam
+- Ice Shard
+- Icicle Spear
+- Shell Smash
+- Drill Run
 
-Walrein @ Sitrus Berry
+Glalie @ Assault Vest
+Ability: Moody
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Surf
-- Body Slam
-- Ice Beam
-- Sheer Cold
+- Headbutt
+- Ice Shard
+- Ice Fang
+- Bite
+
+Glalie @ Sitrus Berry
+Ability: Moody
+Level: 53
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Freeze DARCY
+- Double Team
+- Hex
+- Hyper Beam
 
 === TRAINER_DRAKE ===
 Name: DRAKE
@@ -4748,45 +4828,59 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Shelgon
+Druddigon @ Rocky Helmet
+Ability: Rough Skin
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Rock Tomb
-- Dragon Claw
-- Protect
-- Double Edge
+- Dragon Tail
+- Stealth Rock
+- Gunk Shot
+- Iron Head
 
-Altaria
-Level: 54
+Hydrapple @ Sitrus Berry
+Ability: Supersweet Syrup
+Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Dragon Breath
-- Dragon Dance
-- Aerial Ace
+- Syrup Bomb
+- Fickle Beam
+- Nasty Plot
+- Recover
 
-Kingdra
+Turtonator @ White Herb
+Ability: Shell Armor
 Level: 53
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Smokescreen
-- Dragon Dance
-- Surf
-- Body Slam
-
-Flygon
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Shell Smash
+- Dragon Pulse
 - Flamethrower
-- Crunch
-- Dragon Breath
+- Hyper Voice
+
+Dracozolt @ Blunder Policy
+Ability: Hustle
+Level: 53
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Bolt Beak
+- Outrage
+- Dragon Claw
 - Earthquake
 
-Salamence @ Sitrus Berry
+Dracovish @ Choice Scarf
+Ability: Strong Jaw
+Level: 54
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Fishious Rend
+- Crunch
+- Psychic Fangs
+- Outrage
+
+Dragonite @ Leftovers
+Ability: Multiscale
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Dragon Claw
-- Rock Slide
-- Crunch
+- Thunder Wave
+- Dragon Tail
+- Extreme Speed
+- Outrage
 
 === TRAINER_ROXANNE_1 ===
 Name: ROXANNE
@@ -6345,23 +6439,20 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Wailord
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Rain Dance
-- Water Spout
-- Double Edge
-- Blizzard
-
-Tentacruel
+Garganacl @ Choice Band
+Ability: Purifying Salt
 Level: 55
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Hydro Pump
-- Sludge Bomb
-- Ice Beam
+- Explosion
 
-Ludicolo
+Tatsugiri @ Toxic Orb
+Ability: Commander
+Level: 56
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Endure
+
+Dondozo @ Leftovers
+Ability: Unaware
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Giga Drain
@@ -6369,29 +6460,29 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Leech Seed
 - Double Team
 
-Whiscash
+Flamigo @ Life Orb
+Ability: Costar
 Level: 56
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Surf
-- Amnesia
-- Hyper Beam
+- Brave Bird
+- Close Combat
+- Roost
+- Payback
 
-Gyarados
-Level: 56
+Tyranitar @ Smooth Rock
+Ability: Sand Stream
+Level: 57
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Dragon Dance
+- Stone Edge
 - Earthquake
-- Hyper Beam
-- Surf
+- Knock Off
 
-Milotic @ Sitrus Berry
+Houndstone @ Choice Band
+Ability: Sand Rush
 Level: 58
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Recover
-- Surf
-- Ice Beam
-- Toxic
+- Last Respects
 
 === TRAINER_ANDREW ===
 Name: ANDREW
@@ -9567,45 +9658,58 @@ Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Altaria
-Level: 44
+Grimmsnarl @ Light Clay
+Ability: Prankster
+Level: 42
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Aerial Ace
-- Safeguard
-- Dragon Breath
-- Dragon Dance
+- Light Screen
+- Reflect
+- Spirit Break
+- THunder Wave
 
-Delcatty
+Ribombee @ Focus Sash
+Ability: Shield Dust
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Sing
-- Assist
-- Charm
-- Feint Attack
+- Sticky Web
+- Alluring Voice
+- Bug Buzz
+- Calm Mind
 
-Roselia
+Weezing_Galarian @ Rowap Berry
+Level: 43
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Haze
+- Toxic
+- Self Destruct
+- Belch
+
+Comfey @ Big Root
+Ability: Triage
 Level: 44
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Magical Leaf
-- Leech Seed
+- Draining Kiss
+- Calm Mind
 - Giga Drain
-- Toxic
+- Substitute
 
-Magneton
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Supersonic
-- Thunderbolt
-- Tri Attack
-- Screech
+Gallade @ Razor Claw
+Ability: Sharpness
+Level: 44
+IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+- Psycho Cut
+- Sacred Sword
+- Swords Dance
+- Aerial Ace
 
-Gardevoir
+Gardevoir @ Life Orb
+Ability: Synchronize
 Level: 45
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Team
-- Calm Mind
+- Dazzling Gleam
 - Psychic
-- Future Sight
+- Calm Mind
+- Wish
 
 === TRAINER_BRENDAN_ROUTE_103_MUDKIP ===
 Name: BRENDAN
@@ -11038,13 +11142,23 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Numel
-Level: 18
+Numel @ Weakness Policy
+Ability: Simple
+Level: 21
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Bulldoze
+- Lava Plume
+- Amnesia
+- Incinerate
 
-Poochyena
-Level: 20
+Gligar @ Rocky Helmet
+Ability: Immunity
+Level: 23
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Acrobatics
+- Knock Off
+- Quick Attack
+- Fury Cutter
 
 Numel
 Level: 22
@@ -11116,17 +11230,32 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mightyena
+Nidorino @ Sticky Barb
+Ability: Hustle
 Level: 37
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Double Kick
+- Fury Attack
+- Toxic Spikes
+- VenoShock
 
-Crobat
+Krokorok @ Black Glasses
+Ability: Moxie
 Level: 38
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Crunch
+- Foul PLay
+- Dig
+- Swagger
 
-Camerupt
+Mightyena @ Expert Belt
+Ability: Intimidate
 Level: 39
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Taunt
+- Crunch
+- Fire Fang
+- Thunder Fang
 
 === TRAINER_MAXIE_MT_CHIMNEY ===
 Name: MAXIE
@@ -11138,17 +11267,23 @@ Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mightyena
+Mightyena @ Black Glasses
+Ability: Intimidate
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Howl
+- Crunch
+- Fire Fang
+- Thunder Fang
+
+Sandile @ Soft Sand
+Ability: Moxie
 Level: 24
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Zubat
-Level: 24
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Camerupt
-Level: 25
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Dig
+- Torment
+- Bite
+- Scary Face
 
 === TRAINER_TANNER ===
 Name: TANNER
@@ -12183,9 +12318,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Ralts
+Ralts (M) @ Lax Incense
+Ability: Telepathy
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Draining Kiss
+- Hypnosis
+- Confusion
+- Double Team
+
+Cutiefly @ Focus Sash
+Ability: Sweet Veil
+Level: 18
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Draining Kiss
+- Sweet Scent
+- Absorb
+- Stun Spore
+
+Comfey @ Big Root
+Ability: Triage
+Level: 18
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Draining Kiss
+- Synthesis
+- Magical Leaf
+- Charm
+
+Kirlia (F) @ Fairy Feather
+Ability: Synchronize
+Level: 16
+IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Draining Kiss
+- Psybeam
+- Hypnosis
+- Double Team
 
 === TRAINER_WALLY_VR_2 ===
 Name: WALLY
@@ -13648,21 +13815,32 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Numel
-Level: 26
+Nidorina @ Sticky Barb
+Ability: Hustle
+Level: 35
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Double Kick
+- Fury Attack
+- Toxic Spikes
+- VenoShock
 
-Mightyena
-Level: 28
+Camerupt @ Weakness Policy
+Ability: Solid Rock
+Level: 36
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Earth Power
+- Lava Plume
+- Rock Slide
+- Heavy Slam
 
-Zubat
-Level: 30
+Gliscor @ Toxic Orb
+Ability: Poison Heal
+Level: 37
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
-
-Camerupt
-Level: 33
-IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
+- Dig
+- Swords Dance
+- Roost
+- Heavy Slam
 
 === TRAINER_DARCY ===
 Name: DARCY
@@ -16019,53 +16197,58 @@ Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Skarmory
-Level: 77
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Toxic
-- Aerial Ace
-- Spikes
-- Steel Wing
-
-Claydol
+Eiscue @ Salac Berry
+Ability: Ice Face
 Level: 75
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Reflect
-- Light Screen
-- Ancient Power
-- Earthquake
-
-Aggron
-Level: 76
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Thunder
-- Earthquake
-- Solar Beam
+- Belly Drum
+- Avalanche
+- Iron Head
 - Dragon Claw
 
-Cradily
+Cyclizar @ Sitrus Berry
+Ability: Regenerator
+Level: 75
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- Shed Tail
+- Shift Gear
+- Body Slam
+- Dragon Claw
+
+Minior @ Focus Sash
+Ability: Shields Down
 Level: 76
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Ancient Power
-- Ingrain
-- Confuse Ray
+- Shell Smash
+- Earthquake
+- Acrobatics
+- Stone Edge
 
-Armaldo
+Durant @ Expert Belt
+Ability: Hustle
 Level: 76
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+- X Scissor
+- Iron Head
+- Superpower
+- Hone Claws
+
+Sigilyph @ Life Orb
+Level: 77
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Water Pulse
 - Ancient Power
 - Aerial Ace
 - Slash
 
-Metagross @ Sitrus Berry
+Falinks @ Sitrus Berry
+Ability: Battle Armor
 Level: 78
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Psychic
-- Meteor Mash
-- Shadow Ball
+- No Retreat
+- Close Combat
+- Iron Head
+- Knock Off
 
 === TRAINER_ANABEL ===
 Name: ANABEL
