@@ -257,11 +257,13 @@ static const struct MenuAction MultichoiceList_UnusedAshVendor[] =
     {gText_Cancel2},
 };
 
-static const struct MenuAction MultichoiceList_GameCornerDolls[] =
+static const struct MenuAction MultichoiceList_GameCornerRotoms[] =
 {
-    {gText_TreeckoDollAndPrice},
-    {gText_TorchicDollAndPrice},
-    {gText_MudkipDollAndPrice},
+    {gText_RotomHeatAndPrice},
+    {gText_RotomWashAndPrice},
+    {gText_RotomFrostAndPrice},
+    {gText_RotomFanAndPrice},
+    {gText_RotomMowAndPrice},
     {gText_Exit},
 };
 
@@ -839,7 +841,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] =
     [MULTI_SATISFACTION]               = MULTICHOICE(MultichoiceList_Satisfaction),
     [MULTI_STERN_DEEPSEA]              = MULTICHOICE(MultichoiceList_SternDeepSea),
     [MULTI_UNUSED_ASH_VENDOR]          = MULTICHOICE(MultichoiceList_UnusedAshVendor),
-    [MULTI_GAME_CORNER_DOLLS]          = MULTICHOICE(MultichoiceList_GameCornerDolls),
+    [MULTI_GAME_CORNER_ROTOMS]         = MULTICHOICE(MultichoiceList_GameCornerRotoms),
     [MULTI_GAME_CORNER_COINS]          = MULTICHOICE(MultichoiceList_GameCornerCoins),
     [MULTI_HOWS_FISHING]               = MULTICHOICE(MultichoiceList_HowsFishing),
     [MULTI_UNUSED_51]                  = MULTICHOICE(MultichoiceList_Exit),

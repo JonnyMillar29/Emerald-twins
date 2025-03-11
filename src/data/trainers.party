@@ -550,6 +550,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - VenoShock
 - Baneful Bunker
 - Protect
+
 === TRAINER_ZANDER ===
 Name: ZANDER
 Class: Black Belt
@@ -581,7 +582,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Fell Stinger
 - Minimize
 
-Lombre @ Miricle Seed
+Lombre @ Miracle Seed
 Ability: Swift Swim
 Level: 28
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
@@ -4790,7 +4791,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Wish
 - Protect
 
-Cloyster @ King's Rock
+Cloyster @ Kings Rock
 Ability: Skill Link
 Level: 52
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
@@ -4812,7 +4813,7 @@ Glalie @ Sitrus Berry
 Ability: Moody
 Level: 53
 IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Freeze DARCY
+- Freeze Dry
 - Double Team
 - Hex
 - Hyper Beam
@@ -5439,7 +5440,7 @@ Accelgor
 Ability: Unburden
 Level: 14
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Water Shruiken
+- Water Shuriken
 - Acid
 - Yawn
 - Absorb

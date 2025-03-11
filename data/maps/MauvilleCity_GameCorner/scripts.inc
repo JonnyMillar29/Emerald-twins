@@ -8,7 +8,7 @@ MauvilleCity_GameCorner_MapScripts::
 	.set TM_FLAMETHROWER_COINS, 4000
 	.set TM_THUNDERBOLT_COINS, 4000
 	.set TM_ICE_BEAM_COINS, 4000
-	.set DOLL_COINS, 1000
+	.set ROTOM_COINS, 1000 
 
 	.set COINS_PRICE_50,  1000
 	.set COINS_PRICE_500, 10000
@@ -100,118 +100,96 @@ MauvilleCity_GameCorner_EventScript_NoRoomForCoins::
 	release
 	end
 
-MauvilleCity_GameCorner_EventScript_PrizeCornerDolls::
-	lock
-	faceplayer
-	msgbox MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes, MSGBOX_DEFAULT
-	checkitem ITEM_COIN_CASE
-	goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_ChooseDollPrizeMessage
-	release
-	end
+MauvilleCity_GameCorner_EventScript_PrizeCornerRotoms::
+    lock
+    faceplayer
+    msgbox MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes, MSGBOX_DEFAULT
+    checkitem ITEM_COIN_CASE
+    goto_if_eq VAR_RESULT, TRUE, MauvilleCity_GameCorner_EventScript_ChooseRotomPrizeMessage
+    release
+    end
 
-MauvilleCity_GameCorner_EventScript_ChooseDollPrizeMessage::
-	message MauvilleCity_GameCorner_Text_WhichPrize
-	waitmessage
-	setvar VAR_TEMP_1, 0
-	showcoinsbox 1, 1
-	goto MauvilleCity_GameCorner_EventScript_ChooseDollPrize
+MauvilleCity_GameCorner_EventScript_ChooseRotomPrizeMessage::
+    message MauvilleCity_GameCorner_Text_WhichPrize
+    waitmessage
+    setvar VAR_TEMP_1, 0
+    showcoinsbox 1, 1
+    goto MauvilleCity_GameCorner_EventScript_ChooseRotomPrize
 
-MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize::
-	message MauvilleCity_GameCorner_Text_WhichPrize
-	waitmessage
-	goto MauvilleCity_GameCorner_EventScript_ChooseDollPrize
+MauvilleCity_GameCorner_EventScript_ReturnToChooseRotomPrize::
+    message MauvilleCity_GameCorner_Text_WhichPrize
+    waitmessage
+    goto MauvilleCity_GameCorner_EventScript_ChooseRotomPrize
 
-MauvilleCity_GameCorner_EventScript_ChooseDollPrize::
-	multichoice 12, 0, MULTI_GAME_CORNER_DOLLS, FALSE
-	switch VAR_RESULT
-	case 0, MauvilleCity_GameCorner_EventScript_TreeckoDoll
-	case 1, MauvilleCity_GameCorner_EventScript_TorchicDoll
-	case 2, MauvilleCity_GameCorner_EventScript_MudkipDoll
-	case 3, MauvilleCity_GameCorner_EventScript_CancelDollSelect
-	goto MauvilleCity_GameCorner_EventScript_CancelDollSelect
-	end
+MauvilleCity_GameCorner_EventScript_ChooseRotomPrize::
+    multichoice 12, 0, MULTI_GAME_CORNER_ROTOMS, FALSE
+    switch VAR_RESULT
+    case 0, MauvilleCity_GameCorner_EventScript_RotomHeat
+    case 1, MauvilleCity_GameCorner_EventScript_RotomWash
+    case 2, MauvilleCity_GameCorner_EventScript_RotomFrost
+    case 3, MauvilleCity_GameCorner_EventScript_RotomFan
+    case 4, MauvilleCity_GameCorner_EventScript_RotomMow
+    case 5, MauvilleCity_GameCorner_EventScript_CancelRotomSelect
+    goto MauvilleCity_GameCorner_EventScript_CancelRotomSelect
+    end
 
-MauvilleCity_GameCorner_EventScript_TreeckoDoll::
-	setvar VAR_TEMP_1, 1
-	bufferdecorationname STR_VAR_1, DECOR_TREECKO_DOLL
-	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
+MauvilleCity_GameCorner_EventScript_RotomHeat::
+    setvar VAR_TEMP_1, SPECIES_ROTOM_HEAT
+    bufferspeciesname STR_VAR_1, SPECIES_ROTOM_HEAT
+    goto MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize
 
-MauvilleCity_GameCorner_EventScript_TorchicDoll::
-	setvar VAR_TEMP_1, 2
-	bufferdecorationname STR_VAR_1, DECOR_TORCHIC_DOLL
-	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
+MauvilleCity_GameCorner_EventScript_RotomWash::
+    setvar VAR_TEMP_1, SPECIES_ROTOM_WASH
+    bufferspeciesname STR_VAR_1, SPECIES_ROTOM_WASH
+    goto MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize
 
-MauvilleCity_GameCorner_EventScript_MudkipDoll::
-	setvar VAR_TEMP_1, 3
-	bufferdecorationname STR_VAR_1, DECOR_MUDKIP_DOLL
-	goto MauvilleCity_GameCorner_EventScript_ConfirmDollPrize
+MauvilleCity_GameCorner_EventScript_RotomFrost::
+    setvar VAR_TEMP_1, SPECIES_ROTOM_FROST
+    bufferspeciesname STR_VAR_1, SPECIES_ROTOM_FROST
+    goto MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize
 
-MauvilleCity_GameCorner_EventScript_ConfirmDollPrize::
-	msgbox MauvilleCity_GameCorner_Text_SoYourChoiceIsX, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_CancelDollSelect
-	switch VAR_TEMP_1
-	case 1, MauvilleCity_GameCorner_EventScript_BuyTreeckoDoll
-	case 2, MauvilleCity_GameCorner_EventScript_BuyTorchicDoll
-	case 3, MauvilleCity_GameCorner_EventScript_BuyMudkipDoll
-	end
+MauvilleCity_GameCorner_EventScript_RotomFan::
+    setvar VAR_TEMP_1, SPECIES_ROTOM_FAN
+    bufferspeciesname STR_VAR_1, SPECIES_ROTOM_FAN
+    goto MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize
 
-MauvilleCity_GameCorner_EventScript_BuyTreeckoDoll::
-	checkcoins VAR_TEMP_2
-	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_TREECKO_DOLL
-	checkdecorspace DECOR_TREECKO_DOLL
-	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
-	removecoins DOLL_COINS
-	adddecoration DECOR_TREECKO_DOLL
-	updatecoinsbox 1, 1
-	playse SE_SHOP
-	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
-	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize
-	end
+MauvilleCity_GameCorner_EventScript_RotomMow::
+    setvar VAR_TEMP_1, SPECIES_ROTOM_MOW
+    bufferspeciesname STR_VAR_1, SPECIES_ROTOM_MOW
+    goto MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize
 
-MauvilleCity_GameCorner_EventScript_BuyTorchicDoll::
-	checkcoins VAR_TEMP_2
-	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_TORCHIC_DOLL
-	checkdecorspace DECOR_TORCHIC_DOLL
-	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
-	removecoins DOLL_COINS
-	adddecoration DECOR_TORCHIC_DOLL
-	updatecoinsbox 1, 1
-	playse SE_SHOP
-	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
-	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize
-	end
+MauvilleCity_GameCorner_EventScript_ConfirmRotomPrize::
+    msgbox MauvilleCity_GameCorner_Text_SoYourChoiceIsX, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, NO, MauvilleCity_GameCorner_EventScript_CancelRotomSelect
+    switch VAR_TEMP_1
+    case SPECIES_ROTOM_HEAT, MauvilleCity_GameCorner_EventScript_BuyRotom
+    case SPECIES_ROTOM_WASH, MauvilleCity_GameCorner_EventScript_BuyRotom
+    case SPECIES_ROTOM_FROST, MauvilleCity_GameCorner_EventScript_BuyRotom
+    case SPECIES_ROTOM_FAN, MauvilleCity_GameCorner_EventScript_BuyRotom
+    case SPECIES_ROTOM_MOW, MauvilleCity_GameCorner_EventScript_BuyRotom
+    end
 
-MauvilleCity_GameCorner_EventScript_BuyMudkipDoll::
-	checkcoins VAR_TEMP_2
-	goto_if_lt VAR_TEMP_2, DOLL_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll
-	bufferdecorationname STR_VAR_2, DECOR_MUDKIP_DOLL
-	checkdecorspace DECOR_MUDKIP_DOLL
-	goto_if_eq VAR_RESULT, FALSE, MauvilleCity_GameCorner_EventScript_NoRoomForDoll
-	removecoins DOLL_COINS
-	adddecoration DECOR_MUDKIP_DOLL
-	updatecoinsbox 1, 1
-	playse SE_SHOP
-	msgbox MauvilleCity_GameCorner_Text_SendToYourHomePC, MSGBOX_DEFAULT
-	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize
-	end
+MauvilleCity_GameCorner_EventScript_BuyRotom::
+    checkcoins VAR_TEMP_2
+    goto_if_lt VAR_TEMP_2, ROTOM_COINS, MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRotom
+    removecoins ROTOM_COINS
+    givemon VAR_TEMP_1, 30, ITEM_NONE
+    updatecoinsbox 1, 1
+    playse SE_SHOP
+    msgbox MauvilleCity_GameCorner_Text_EnjoyYourRotom, MSGBOX_DEFAULT
+    goto MauvilleCity_GameCorner_EventScript_ReturnToChooseRotomPrize
+    end
 
-MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForDoll::
-	msgbox MauvilleCity_GameCorner_Text_NotEnoughCoins, MSGBOX_DEFAULT
-	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize
-	end
+MauvilleCity_GameCorner_EventScript_NotEnoughCoinsForRotom::
+    msgbox MauvilleCity_GameCorner_Text_NotEnoughCoins, MSGBOX_DEFAULT
+    goto MauvilleCity_GameCorner_EventScript_ReturnToChooseRotomPrize
+    end
 
-MauvilleCity_GameCorner_EventScript_NoRoomForDoll::
-	call Common_EventScript_NoRoomForDecor
-	goto MauvilleCity_GameCorner_EventScript_ReturnToChooseDollPrize
-	end
-
-MauvilleCity_GameCorner_EventScript_CancelDollSelect::
-	msgbox MauvilleCity_GameCorner_Text_OhIsThatSo, MSGBOX_DEFAULT
-	hidecoinsbox 0, 0
-	release
-	end
+MauvilleCity_GameCorner_EventScript_CancelRotomSelect::
+    msgbox MauvilleCity_GameCorner_Text_OhIsThatSo, MSGBOX_DEFAULT
+    hidecoinsbox 0, 0
+    release
+    end
 
 MauvilleCity_GameCorner_EventScript_PrizeCornerTMs::
 	lock
@@ -664,6 +642,9 @@ MauvilleCity_GameCorner_Text_ExchangeCoinsForPrizes:
 
 MauvilleCity_GameCorner_Text_WhichPrize:
 	.string "Which prize would you like?$"
+
+MauvilleCity_GameCorner_Text_EnjoyYourRotom:
+	.string "Enjoy your surprise$"
 
 MauvilleCity_GameCorner_Text_SoYourChoiceIsTheTMX:
 	.string "So your choice is\n"
