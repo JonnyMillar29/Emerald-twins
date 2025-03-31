@@ -4791,7 +4791,7 @@
               {
                 "min_level": 22,
                 "max_level": 22,
-                "species": "SPECIES_KECLEON"
+                "species": "SPECIES_INKAY"
               },
               {
                 "min_level": 27,
@@ -4801,7 +4801,7 @@
               {
                 "min_level": 27,
                 "max_level": 27,
-                "species": "SPECIES_KECLEON"
+                "species": "SPECIES_INKAY"
               },
               {
                 "min_level": 25,
@@ -4811,7 +4811,7 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_KECLEON"
+                "species": "SPECIES_INKAY"
               }
             ]
           }

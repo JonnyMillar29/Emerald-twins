@@ -28,9 +28,9 @@ MossdeepCity_House3_EventScript_DeclineSuperRod::
 
 MossdeepCity_House3_Text_YouWantSuperRod:
 	.string "Hey there, TRAINER!\n"
-	.string "A SUPER ROD really is super!\p"
-	.string "Say all you want, but this baby can\n"
-	.string "catch POKéMON off the seafloor!\p"
+	.string "I'm Jeremy, I used to catch river monsters.\p"
+	.string "However, I've caught them all now,\n"
+	.string "I don't need this SUPER ROD anymore.\p"
 	.string "What do you think?\n"
 	.string "You want it, don't you?$"
 

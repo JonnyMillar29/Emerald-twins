@@ -1191,13 +1191,22 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
+Shuckle @ Rocky Helmet
+Ability: Sturdy
 Level: 13
 IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
-- Sand Attack
-- Headbutt
-- Tail Whip
-- Surf
+- Guard Split
+- Rollout
+- Wrap
+
+Wailmer @ Leftovers
+Ability: Sturdy
+Level: 13
+IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
+- Aqua Ring
+- Rest
+- Snore
+- Water Gun
 
 === TRAINER_SIMON ===
 Name: SIMON
@@ -5684,13 +5693,23 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Taillow @ Oran Berry
-Level: 16
+Meowstic (F) @ Psychic Seed
+Ability: Competitive
+Level: 15
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Magical Leaf
+- Confusion
+- Charge Beam
+- Disarming Voice
 
-Zigzagoon @ Oran Berry
+Indeedee (M) @ Terrain Extender
+Ability: Psychic Surge
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Helping Hand
+- Fake Out
+- Disarming Voice
+- Terrain Pulse
 
 === TRAINER_MIGUEL_1 ===
 Name: MIGUEL
@@ -5701,9 +5720,19 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Skitty @ Oran Berry
-Level: 15
+Aipom @ Kings Rock
+Ability: Skill Link
+Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fake Out
+- Fury Swipes
+
+Cincinno @ Kings Rock
+Ability: Skill Link
+Level: 18
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Blast
+- Bullet Seed
 
 === TRAINER_COLTON ===
 Name: COLTON
@@ -5823,9 +5852,23 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Roselia @ Oran Berry
-Level: 17
+Stunfisk_Galarian @ Misty Seed
+Ability: Mimicry
+Level: 16
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Revenge
+- Mud Shot
+- Endure
+- Metal Claw
+
+Weezing_Galarian @ Terrain Extender
+Ability: Misty Surge
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Aromatic Mist
+- Smokescreen
+- Haze
+- Assurance
 
 === TRAINER_VANESSA ===
 Name: VANESSA
@@ -5870,13 +5913,14 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Plusle @ Oran Berry
+Sinistea @ Weakness Policy
+Ability: Weak Armor
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Minun @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Mega Drain
+- Astonish
+- Withdraw
+- Aromatic Mist
 
 === TRAINER_ISABEL_2 ===
 Name: ISABEL
@@ -6036,13 +6080,23 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Meditite
+Raichu_Alolan @ Electric Seed
+Ability: Surge Surfer
 Level: 18
 IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
-- High Jump Kick
-- Meditate
-- Confusion
-- Detect
+- Nuzzle
+- Psychic
+- Thunderbolt
+- Nasty Plot
+
+Pincurchin @ Terrain Extender
+Ability: Electric Surge
+Level: 18
+IVs: 24 HP / 24 Atk / 24 Def / 24 SpA / 24 SpD / 24 Spe
+- Thundershock
+- Water Gun
+- Charge
+- Fury Attack
 
 === TRAINER_SHELBY_1 ===
 Name: SHELBY
@@ -11350,17 +11404,23 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Marill
-Level: 15
+Grovyle @ Grassy Seed
+Ability: Unburden
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Acrobatics
+- Fury Cutter
+- Detect
+- Grassy Glide
 
-Shroomish
-Level: 15
+Thwackey @ Terrain Extender
+Ability: Grassy Surge
+Level: 17
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
-
-Numel
-Level: 15
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Razor Leaf
+- Double Hit
+- Taunt
+- Growl
 
 === TRAINER_HALEY_2 ===
 Name: HALEY
@@ -13286,23 +13346,9 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Cacnea @ Safety Goggles
-Ability: Water Absorb
+Magikarp
 Level: 9
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rototiller
-- Poison Sting
-- Absorb
-- Growth
-
-Paras @ Oran Berry
-Ability: Effect Spore
-Level: 9
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Rototiller
-- Scratch
-- Stun Spore
-- Poison Powder
 
 === TRAINER_HAILEY ===
 Name: HAILEY
@@ -13343,13 +13389,14 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Minun @ Oran Berry
+Shroodle @ Petaya Berry
+Ability: Unburden
 Level: 14
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Plusle @ Oran Berry
-Level: 14
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fling
+- Poison Fang
+- Scratch
+- Leer
 
 === TRAINER_JOSEPH ===
 Name: JOSEPH
