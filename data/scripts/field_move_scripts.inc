@@ -297,10 +297,10 @@ EventScript_UseWaterfall::
 	msgbox Text_WantToWaterfall, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
 	msgbox Text_MonUsedWaterfall, MSGBOX_DEFAULT
-	call FollowerIntoPlayerScript
-    callnative HideFollower
+	call FollowerNPCIntoPlayerScript
+	callnative HideNPCFollower
 	dofieldeffect FLDEFF_USE_WATERFALL
-	callnative FollowMe_WarpSetEnd
+	callnative FollowerNPC_WarpSetEnd
 	goto EventScript_EndWaterfall
 
 EventScript_CannotUseWaterfall::
@@ -335,8 +335,8 @@ EventScript_UseDive::
 	msgbox Text_WantToDive, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndDive
 	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
-	call FollowerIntoPlayerScript
-	callnative HideFollower
+	call FollowerNPCIntoPlayerScript
+	callnative HideNPCFollower
 	setfieldeffectargument 0, VAR_0x8004
 	setfieldeffectargument 1, 1
 	dofieldeffect FLDEFF_USE_DIVE
@@ -362,6 +362,8 @@ EventScript_UseDiveUnderwater::
 	msgbox Text_WantToSurface, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndSurface
 	msgbox Text_MonUsedDive, MSGBOX_DEFAULT
+	call FollowerNPCIntoPlayerScript
+	callnative HideNPCFollower
 	dofieldeffect FLDEFF_USE_DIVE
 	goto EventScript_EndSurface
 	end
@@ -373,25 +375,9 @@ EventScript_CantSurface::
 	end
 
 EventScript_EndSurface::
+	callnative SetFollowerNPCSurfSpriteAfterDive
 	releaseall
 	end
-
-EventScript_DigCommon:
-	isfollowerfieldmoveuser VAR_0x8004
-	setfieldeffectargument 3, VAR_0x8004 @ skip pose if true
-	dofieldeffect FLDEFF_USE_DIG
-	waitstate
-EventScript_DigSealedChamber:: @ fallthrough
-	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
-	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
-	callnative DoBrailleDigEffect
-	releaseall
-	end
-
-@ Use Dig from party menu
-EventScript_UseDig::
-	lockall
-	goto EventScript_DigCommon
 
 Text_CantDive:
 	.string "The sea is deep here. A POKéMON\n"
@@ -418,29 +404,19 @@ EventScript_FailSweetScent::
 
 Text_FailSweetScent:
 	.string "Looks like there's nothing here…$"
-
-FollowerPositionFixScript::
+	
+FollowerNPCIntoPlayerScript::
 	setvar 0x8000 0x0
-	callnative FollowerTrainerSightingPositionFix
+	callnative FollowerNPCIntoPlayer
 	compare VAR_RESULT 0xFFFF
-	goto_if_eq FollowerPositionFixScriptReturn
+	goto_if_eq FollowerNPCIntoPlayerScriptReturn
+	setvar 0x8005 0xFD  @ follower
 	call WalkCall
 	setvar 0x8000 0x1
-	callnative FollowerTrainerSightingPositionFix
-FollowerPositionFixScriptReturn:
+	callnative FollowerNPCIntoPlayer
+FollowerNPCIntoPlayerScriptReturn:
 	return
-    
-FollowerIntoPlayerScript::
-	setvar 0x8000 0x0
-	callnative FollowerIntoPlayer
-	compare VAR_RESULT 0xFFFF
-	goto_if_eq FollowerPositionFixScriptReturn
-	setvar 0x8005 0xFE  @ follower
-	call WalkCall
-	setvar 0x8000 0x1
-	callnative FollowerIntoPlayer
-	return
-    
+	
 WalkCall:
 	compare VAR_RESULT 0x0
 	call_if_eq WalkDownCall
@@ -468,19 +444,19 @@ WalkLeftCall:
 WalkRightCall:
 	applymovement 0x8005 WalkRight
 	return
-    
+	
 WalkDown:
-    walk_down
-    step_end 
+	walk_down
+	step_end 
 
 WalkUp:
-    walk_up
-    step_end
+	walk_up
+	step_end
 
 WalkLeft:
-    walk_left
-    step_end
+	walk_left
+	step_end
 
 WalkRight:
-    walk_right
-    step_end
+	walk_right
+	step_end

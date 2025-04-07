@@ -19,7 +19,7 @@
 #include "field_screen_effect.h"
 #include "field_weather.h"
 #include "fldeff.h"
-#include "follow_me.h"
+#include "follower_npc.h"
 #include "item.h"
 #include "item_menu.h"
 #include "item_use.h"
@@ -243,7 +243,11 @@ void ItemUseOutOfBattle_Bike(u8 taskId)
         DisplayCannotDismountBikeMessage(taskId, tUsingRegisteredKeyItem);
     else
     {
-        if (Overworld_IsBikingAllowed() == TRUE && IsBikingDisallowedByPlayer() == 0 && FollowerCanBike())
+        if (Overworld_IsBikingAllowed() == TRUE && IsBikingDisallowedByPlayer() == 0
+#if OW_ENABLE_NPC_FOLLOWERS
+         && FollowerNPCCanBike()
+#endif
+         )
         {
             sItemUseOnFieldCB = ItemUseOnFieldCB_Bike;
             SetUpItemUseOnFieldCallback(taskId);
@@ -260,7 +264,9 @@ static void ItemUseOnFieldCB_Bike(u8 taskId)
     else // ACRO_BIKE
         GetOnOffBike(PLAYER_AVATAR_FLAG_ACRO_BIKE);
     
-    FollowMe_HandleBike();
+#if OW_ENABLE_NPC_FOLLOWERS
+    FollowerNPC_HandleBike();
+#endif
     ScriptUnfreezeObjectEvents();
     UnlockPlayerFieldControls();
     DestroyTask(taskId);
@@ -1051,8 +1057,10 @@ static void ItemUseOnFieldCB_EscapeRope(u8 taskId)
 
 bool8 CanUseDigOrEscapeRopeOnCurMap(void)
 {
-    if (!CheckFollowerFlag(FOLLOWER_FLAG_CAN_LEAVE_ROUTE))
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (!CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_LEAVE_ROUTE))
         return FALSE;
+#endif
     if (gMapHeader.allowEscaping)
         return TRUE;
     else

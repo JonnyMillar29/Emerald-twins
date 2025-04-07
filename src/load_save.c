@@ -1,7 +1,7 @@
 #include "global.h"
 #include "malloc.h"
 #include "berry_powder.h"
-#include "follow_me.h"
+#include "follower_npc.h"
 #include "item.h"
 #include "load_save.h"
 #include "main.h"
@@ -198,37 +198,6 @@ void LoadPlayerParty(void)
     }
 }
 
-void LoadPlayerPartyAfterPartnerBattle(void)
-{
-    int i;
-    int cutoff;
-
-    gPlayerPartyCount = gSaveBlock1Ptr->playerPartyCount;
-
-    if (gPlayerPartyCount < 5)
-    {
-        SavePlayerParty();
-        cutoff = (gPlayerPartyCount < 3) ? 1 : 2;
-        for (i=cutoff; i < gPlayerPartyCount; i++)
-        {
-            u32 data;
-            gPlayerParty[i] = gSaveBlock1Ptr->playerParty[i+(3-cutoff)];
-
-            // TODO: Turn this into a save migration once those are available.
-            // At which point we can remove hp and status from Pokemon entirely.
-            data = gPlayerParty[i].maxHP - gPlayerParty[i].hp;
-            SetBoxMonData(&gPlayerParty[i].box, MON_DATA_HP_LOST, &data);
-            data = gPlayerParty[i].status;
-            SetBoxMonData(&gPlayerParty[i].box, MON_DATA_STATUS, &data);
-        }
-
-        for (i=gPlayerPartyCount; i < PARTY_SIZE; i++)
-            ZeroMonData(&gPlayerParty[i]);
-        
-        SavePlayerParty();
-    }
-}
-
 void LoadLastThreeMons(void)
 {
     int i;
@@ -240,16 +209,15 @@ void LoadLastThreeMons(void)
         u32 data;
         gPlayerParty[i] = gSaveBlock1Ptr->playerParty[i];
 
-        // TODO: Turn this into a save migration once those are available.
-        // At which point we can remove hp and status from Pokemon entirely.
         data = gPlayerParty[i].maxHP - gPlayerParty[i].hp;
         SetBoxMonData(&gPlayerParty[i].box, MON_DATA_HP_LOST, &data);
         data = gPlayerParty[i].status;
         SetBoxMonData(&gPlayerParty[i].box, MON_DATA_STATUS, &data);
+        
     }
 
-    if (F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE != 0
-     && (FlagGet(F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE) || F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE == ALWAYS))
+    if (OW_FLAG_HEAL_AFTER_FOLLOWER_BATTLE != 0
+     && (FlagGet(OW_FLAG_HEAL_AFTER_FOLLOWER_BATTLE) || OW_FLAG_HEAL_AFTER_FOLLOWER_BATTLE == ALWAYS))
     {
         HealPlayerParty();
     }
