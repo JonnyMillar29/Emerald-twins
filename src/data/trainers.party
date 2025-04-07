@@ -245,13 +245,17 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Manectric
-Level: 29
+Togetic @ Blunder Policy
+Ability: Hustle
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Fly
 
-Shiftry
-Level: 29
+Dhelmise @ Ghost Gem
+Ability: Steelworker
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Phantom Force
 
 === TRAINER_ALBERTO ===
 Name: ALBERTO
@@ -309,9 +313,20 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Gyarados
-Level: 34
+Luvdisc @ Focus Sash
+Ability: Swift Swim
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Entrainment
+
+Pelipper @ Leftovers
+Ability: Rain Dish
+Level: 33
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Stockpile
+- Spit Up
+- Swallow
+- Air Slash
 
 === TRAINER_GRUNT_RUSTURF_TUNNEL ===
 Name: GRUNT
@@ -2072,9 +2087,23 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Sableye
+Bronzong @ Leftovers
+Ability: Heavy Metal
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Stealth Rock
+- Heavy Slam
+- Extrasensory
+- Confuse Ray
+
+Mr. Mime @ Choice Scarf
+Ability: Soundproof
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Trick
+- Healing Wish
+- Dazzling Gleam
+- Psychic
 
 === TRAINER_TASHA ===
 Name: TASHA
@@ -3262,13 +3291,31 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Machop
-Level: 24
+Togekiss @ Razor Claw
+Ability: Serene Grace
+Level: 26
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Air Slash
+- Ancient Power
 
-Machoke
-Level: 28
+Oranguru @ Choice Scarf
+Ability: Inner Focus
+Level: 26
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Instruct
+
+Dudunsparce @ Scope Lens
+Ability: Serene Grace
+Level: 26
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Headbutt
+- Coil
+ 
+Oranguru @ Choice Scarf
+Ability: Inner Focus
+Level: 26
+IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Instruct
 
 === TRAINER_NOB_1 ===
 Name: NOB
@@ -3847,13 +3894,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Zigzagoon
-Level: 20
+Carkol @ Charcoal
+Ability: Steam Engine
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Blast
+- Rapid Spin
+- Flame Charge
+- Ancient Power
 
-Taillow
-Level: 20
+Corsola_Galarian @ Sitrus Berry
+Ability: Weak Armor
+Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Surf
+- Ancient Power
+- Disable
+- Destiny Bond
+
+Carbink @ Leftovers
+Ability: Clear Body
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Psych Up
+- Smack Down
+- Flail
+- Harden
+
+Klawf @ White Herb
+Ability: Anger Shell
+Level: 22
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Tomb
+- Metal Claw
+- Rock Smash
+- Vice Grip
 
 === TRAINER_AUTUMN ===
 Name: AUTUMN
@@ -4021,17 +4096,32 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move
 
-Surskit
-Level: 27
+Amaura @ Nevermeltice
+Ability: Refrigerate
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Explosion
 
-Surskit
-Level: 27
+Noibat @ Throat Spray
+Ability: Telepathy
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Boomburst
 
-Surskit
-Level: 27
+Snover @ Leftovers
+Ability: Soundproof
+Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Substitute
+- Swords Dance
+- Razor Leaf
+- Ice Shard
+
+Zangoose @ Choice Band
+Ability: Soundproof
+Level: 30
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Final Gambit
 
 === TRAINER_DEREK ===
 Name: DEREK
@@ -5693,7 +5783,7 @@ Music: Twins
 Double Battle: No
 AI: Check Bad Move
 
-Meowstic (F) @ Psychic Seed
+Meowstic_Female @ Psychic Seed
 Ability: Competitive
 Level: 15
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
@@ -5702,7 +5792,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 - Charge Beam
 - Disarming Voice
 
-Indeedee (M) @ Terrain Extender
+Indeedee_Male @ Terrain Extender
 Ability: Psychic Surge
 Level: 16
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
@@ -5713,8 +5803,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_MIGUEL_1 ===
 Name: MIGUEL
-Class: Pokefan
-Pic: Pokefan M
+Class: Rich Boy
+Pic: Rich Boy
 Gender: Male
 Music: Twins
 Double Battle: No
@@ -5727,7 +5817,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fake Out
 - Fury Swipes
 
-Cincinno @ Kings Rock
+Cinccino @ Kings Rock
 Ability: Skill Link
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
@@ -6604,8 +6694,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BRAYDEN_1 ===
 Name: BRAYDEN
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -6622,8 +6712,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_JACOB ===
 Name: JACOB
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -6725,8 +6815,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_BRAYDEN_2 ===
 Name: BRAYDEN
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -6746,8 +6836,8 @@ IVs: 1 HP / 1 Atk / 1 Def / 1 SpA / 1 SpD / 1 Spe
 
 === TRAINER_BRAYDEN_3 ===
 Name: BRAYDEN
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -6771,8 +6861,8 @@ IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_BRAYDEN_4 ===
 Name: BRAYDEN
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -6796,8 +6886,8 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 
 === TRAINER_BRAYDEN_5 ===
 Name: BRAYDEN
-Class: Fisherman
-Pic: Fisherman
+Class: Pokefan
+Pic: Pokefan_M
 Gender: Male
 Music: Hiker
 Double Battle: No
@@ -7180,13 +7270,32 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Staryu
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Krokorok @ Choice Band
+Ability: Anger Point
+Level: 36
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Earthquake
+- Crunch
+- Aerial Ace
+- Brick Break
 
-Staryu
-Level: 33
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Steelix @ Weakness Policy
+Ability: Rock Head
+Level: 36
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Earthquake
+- Double Edge
+- Head Smash
+- Heavy Slam
+
+Mudsdale @ Leftovers
+Ability: Stamina
+Level: 36
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Earthquake
+- Counter
+- Strength
+- Heavy Slam
 
 === TRAINER_DEMETRIUS ===
 Name: DEMETRIUS
@@ -7326,13 +7435,29 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Staryu
-Level: 34
+Golisopod @ Choice Scarf
+Ability: Emergency Exit
+Level: 36
 IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Frost Breath
+
+Sableye @ Rocky Helmet
+Ability: Prankster
+Level: 36
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Gravity
+- Recover
+- Protect
+- Knock Off
+
+Orthworm @ Soft Sand
+Ability: Earth Eater
+Level: 36
+IVs: 19 HP / 19 Atk / 19 Def / 19 SpA / 19 SpD / 19 Spe
+- Earthquake
+- Iron Head
+- Take Down
+- Smack Down
 
 === TRAINER_TALIA ===
 Name: TALIA
@@ -7438,13 +7563,41 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Altaria
-Level: 37
+Dreepy @ Kasib Berry
+Ability: Cursed Body
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Infestation
+- Confuse Ray
+- Thunder Wave 
+- Quick Attack
 
-Altaria
-Level: 37
+Noibat @ Life Orb
+Ability: Infiltrator
+Level: 21
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Supersonic
+- Double Team
+- Wing Attack
+- Bite
+
+Dratini @ Haban Berry
+Ability: Shed Skin
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Wrap
+- Thunder Wave
+- Twister
+- Protect
+
+Gible @ Rocky Helmet
+Ability: Rough Skin
+Level: 21
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Dragonbreath
+- Bulldoze
+- Take Down
+- Fire Fang
 
 === TRAINER_NICOLAS_2 ===
 Name: NICOLAS
@@ -7703,20 +7856,46 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CHESTER ===
 Name: CHESTER
-Class: Bird Keeper
-Pic: Bird Keeper
+Class: Expert
+Pic: Expert M
 Gender: Male
 Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Taillow
-Level: 25
+Xatu @ Wacan Berry
+Ability: Magic Bounce
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Simple Beam
+- Confuse Ray
+- Air Slash
+- Night Shade
 
-Swellow
-Level: 25
+Barboach @ Water Gem
+Ability: Oblivious
+Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Dragon Dance
+- Aqua Tail
+- Bulldoze
+- Facade
+
+Delcatty @ Silk Scarf
+Ability: Normalize
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Simple Beam
+- Facade
+- Protect
+- Helping Hand
+
+Oricorio Sensu @ Metronome
+Ability: Dancer
+Level: 26
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Quiver Dance
+- Aerial Ace
 
 === TRAINER_ROBERT_2 ===
 Name: ROBERT
@@ -8491,9 +8670,23 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Marill
+Pelipper @ Damp Rock
+Ability: Drizzle
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Tailwind
+- Water Pulse
+- Air Cutter
+- Roost
+
+Archeops
+Ability: Defeatist
+Level: 37
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Slide
+- Acrobatics
+- Crunch
+- Steel Wing
 
 === TRAINER_TANYA ===
 Name: TANYA
@@ -8896,13 +9089,19 @@ Music: Intense
 Double Battle: No
 AI: Check Bad Move
 
-Wobbuffet
+Weezing_Galarian @ Terrain Extender
+Ability: Misty Surge
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Destiny Bond
-- Safeguard
-- Counter
-- Mirror Coat
+- Misty Explosion
+
+Azumarill @ Metal Coat
+Ability: Huge Power
+Level: 32
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Steel Roller
+- Perish Song
+- Aqua Jet
 
 === TRAINER_IRENE ===
 Name: IRENE
@@ -9443,9 +9642,32 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Absol
-Level: 27
+Polteageist @ Starf Berry
+Ability: Weak Armor
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Teatime
+- Shadow Ball
+- Strength Sap
+- Psychic
+
+Snorlax @ Figy Berry
+Ability: Gluttony
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Recycle
+- Curse
+- Facade
+- Earthquake
+
+Appletun @ Sitrus Berry
+Ability: Ripen
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Recycle
+- Substitute
+- Apple Acid
+- Dragon Pulse
 
 === TRAINER_JONAS ===
 Name: JONAS
@@ -10131,16 +10353,39 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_DAVIS ===
 Name: DAVIS
-Class: Bug Catcher
-Pic: Bug Catcher
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Pinsir
-Level: 27
+Dedenne @ Petaya Berry
+Ability: Cheek Pouch
+Level: 31
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Recycle
+- Substitute
+- Discharge
+- Dazzling Gleam
+
+Tauros_Paldean_Combat_Breed @ Liechi Berry
+Ability: Cud Chew
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Raging Bull
+- Bulk Up
+- Headbutt
+- Zen Headbutt
+
+Flapple @ Salac Berry
+Ability: Ripen
+Level: 31
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- U-Turn
+- Grav Apple
+- Acrobatics
+- Outrage
 
 === TRAINER_MITCHELL ===
 Name: MITCHELL
@@ -11832,13 +12077,36 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Geodude
-Level: 18
+Mudbray @ Assault Vest
+Ability: Stamina
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Strength
+- Bulldoze
+- Double Kick
+- Heavy Slam
 
-Machop
-Level: 18
+Trubbish @ Loaded Dice
+Ability: Aftermath
+Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Rock Blast
+
+Sawk @ Cheri Berry
+Ability: Mold Breaker
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Coaching
+- Low Sweep
+
+Flamigo @ Life Orb
+Ability: Costar
+Level: 20
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Low Kick
+- Detect
+- Wing Attack
+- Copycat
 
 === TRAINER_LUCAS_1 ===
 Name: LUCAS
@@ -12266,21 +12534,41 @@ Music: Suspicious
 Double Battle: No
 AI: Check Bad Move / Try To Faint
 
-Koffing
-Level: 25
+Stufful @ Silk Scarf
+Ability: Fluffy
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Self Destruct
-- Sludge
-- Smokescreen
+- Taunt
+- Bulk Up
+- Strength
+- Low Sweep
 
-Koffing
-Level: 25
+Teddiursa @ Expert Belt
+Ability: Quick Feet
+Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tackle
-- Poison Gas
-- Sludge
-- Smokescreen
+- Slash
+- Play Rough
+- Payback
+- Metal Claw
+
+Pancham @ Black Belt
+Ability: Scrappy
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Work Up
+- Slash
+- Vital Throw
+- Thunder Punch
+
+Cubchoo @ Nevermeltice
+Ability: Rattled
+Level: 28
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Slash
+- Avalanche
+- Low Kick
+- Liquidation
 
 === TRAINER_KEIGO ===
 Name: KEIGO
@@ -12967,21 +13255,59 @@ Music: Twins
 Double Battle: Yes
 AI: Check Bad Move
 
-Swablu
-Level: 32
+Cramorant @ Sitrus Berry
+Ability: Gulp Missile
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Sing
-- Fury Attack
-- Safeguard
-- Aerial Ace
+- Tailwind
+- Surf
+- Roost
+- Ice Beam
 
-Numel
-Level: 35
+Kilowattrel @ Sharp Beak
+Ability: Wind Power
+Level: 36
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Flamethrower
-- Take Down
-- Rest
-- Earthquake
+- Hurricane
+- Thunderbolt
+- Roost
+- Uproar
+
+Fletchinder @ Charcoal
+Ability: Gale Wings
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Brave Bird
+- Flame Charge
+- Quick Attack
+- Tailwind
+
+Dartrix @ Miracle Seed
+Ability: Long Reach
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Shadow Sneak
+- Seed Bomb
+- Pluck
+- Synthesis
+
+Honchkrow @ Life Orb
+Ability: Moxie
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Night Slash
+- Sucker Punch
+- Fly
+- Tailwind
+
+Swoobat @ Focus Sash
+Ability: Simple
+Level: 36
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Calm Mind
+- Stored Power
+- Air Cutter
+- Giga Drain
 
 === TRAINER_TYRA_AND_IVY ===
 Name: TYRA & IVY
@@ -13525,8 +13851,8 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COBY ===
 Name: COBY
-Class: Bird Keeper
-Pic: Bird Keeper
+Class: Youngster
+Pic: Youngster
 Gender: Male
 Music: Cool
 Double Battle: No
@@ -14122,13 +14448,20 @@ Music: Hiker
 Double Battle: No
 AI: Check Bad Move
 
-Numel
+Shuckle @ Ganlon Berry
+Ability: Gluttony
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Toxic Spikes
+- Roar
+- Sticky Web
+- Rollout
 
-Slugma
+Throh @ Choice Band
+Ability: Mold Breaker
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Circle Throw
 
 === TRAINER_SHAYLA ===
 Name: SHAYLA
@@ -14139,13 +14472,21 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Shroomish
+Skarmory @ Black Belt
+Ability: Weak Armor
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Spikes
+- Whirlwind
+- Roost
+- Body Press
 
-Roselia
+Druddigon @ Rocky Helmet
+Ability: Rough Skin
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Stealth Rock
+- Dragon Tail
 
 === TRAINER_KYRA ===
 Name: KYRA
@@ -14493,13 +14834,19 @@ Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Loudred
-Level: 29
+Floette @ Power Herb
+Ability: Symbiosis
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Magical Leaf
+- Draining Kiss
 
-Vigoroth
-Level: 29
+Oranguru @ Power Herb
+Ability: Symbiosis
+Level: 32
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Calm Mind
+- Stored Power
 
 === TRAINER_MAY_RUSTBORO_TREECKO ===
 Name: MAY

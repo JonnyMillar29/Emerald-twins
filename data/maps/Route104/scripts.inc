@@ -334,7 +334,7 @@ Route104_EventScript_TrainerTipsDoubleBattles::
 	end
 
 Route104_EventScript_Boy1::
-	msgbox Route104_Text_ThrowBallAtWeakenedPokemon, MSGBOX_NPC
+	msgbox Route104_Text_SplitEncountersWarning, MSGBOX_NPC
 	end
 
 Route104_EventScript_Woman::
@@ -1037,11 +1037,11 @@ Route104_Text_WhatsItLikeAtBottomOfSea:
 	.string "I wonder what it's like at the bottom\n"
 	.string "of the sea?$"
 
-Route104_Text_ThrowBallAtWeakenedPokemon:
-	.string "If you're going to throw a POKé BALL,\n"
-	.string "weaken the wild POKéMON first.\p"
-	.string "It will be easier to catch if it's been\n"
-	.string "poisoned, burned, or lulled to sleep.$"
+Route104_Text_SplitEncountersWarning:
+	.string "There's more grass here than normal,\n"
+	.string "it's full of bad encounters.\p"
+	.string "I'd go around if I were you.\n"
+	.string "The north of the route has better encounters.$"
 
 Route104_Text_OnlyThrowBallAtWildPokemon:
 	.string "You're a thief if you try to steal\n"
