@@ -9,6 +9,7 @@
 #include "field_player_avatar.h"
 #include "fieldmap.h"
 #include "follow_me.h"
+#include "follower_npc.h"
 #include "menu.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
@@ -652,7 +653,7 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
     }
 
     if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_UNDERWATER) && (heldKeys & B_BUTTON) && FlagGet(FLAG_SYS_B_DASH)
-     && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0 && !FollowerComingThroughDoor())
+     && IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior) == 0 && !FollowerComingThroughDoor() && !FollowerNPCComingThroughDoor())
     {
         PlayerRun(direction);
         gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
@@ -1387,6 +1388,9 @@ void InitPlayerAvatar(s16 x, s16 y, u8 direction, u8 gender)
     gPlayerAvatar.gender = gender;
     SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_CONTROLLABLE | PLAYER_AVATAR_FLAG_ON_FOOT);
     CreateFollowerAvatar();
+#if OW_ENABLE_NPC_FOLLOWERS
+    CreateFollowerNPCAvatar();
+#endif
 }
 
 void SetPlayerInvisibility(bool8 invisible)
@@ -1638,6 +1642,9 @@ static void CreateStopSurfingTask(u8 direction)
     Task_StopSurfingInit(taskId);
 
     PrepareFollowerDismountSurf();
+#if OW_ENABLE_NPC_FOLLOWERS
+    PrepareFollowerNPCDismountSurf();
+#endif
 }
 
 static void Task_StopSurfingInit(u8 taskId)

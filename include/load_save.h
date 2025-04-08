@@ -51,6 +51,7 @@ void SavePlayerParty(void);
 void LoadPlayerParty(void);
 void LoadPlayerPartyAfterPartnerBattle(void);
 void LoadLastThreeMons(void);
+void LoadLastThreeMons(void);
 void SaveObjectEvents(void);
 void LoadObjectEvents(void);
 void CopyPartyAndObjectsToSave(void);
