@@ -843,7 +843,6 @@ void Task_DoDoorWarp(u8 taskId)
 #if OW_ENABLE_NPC_FOLLOWERS
     }
 #endif
-}
 
 static void Task_DoContestHallWarp(u8 taskId)
 {

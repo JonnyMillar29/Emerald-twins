@@ -10687,20 +10687,6 @@ bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent)
     return FALSE;
 }
 
-bool8 PlayerIsUnderWaterfall(struct ObjectEvent *objectEvent)
-{
-    s16 x;
-    s16 y;
-
-    x = objectEvent->currentCoords.x;
-    y = objectEvent->currentCoords.y;
-    MoveCoordsInDirection(DIR_NORTH, &x, &y, 0, 1);
-    if (MetatileBehavior_IsWaterfall(MapGridGetMetatileBehaviorAt(x, y)))
-        return TRUE;
-
-    return FALSE;
-}
-
 // Get gfx data from daycare pokemon and store it in vars
 void GetDaycareGraphics(struct ScriptContext *ctx)
 {

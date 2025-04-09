@@ -4035,52 +4035,6 @@ bool8 FieldCallback_PrepareFadeInForTeleport(void)
     return FieldCallback_PrepareFadeInFromMenu();
 }
 
-static void Task_HideFollowerForTeleport(u8 taskId)
-{
-    struct ObjectEvent *follower = &gObjectEvents[GetFollowerMapObjId()];
-    struct Task *task;
-    task = &gTasks[taskId];
-    if (task->data[0] == 0)
-    {
-        if (!gSaveBlock2Ptr->follower.inProgress)
-        {
-            DestroyTask(taskId);
-        }
-        else
-        {
-            u8 followerObjId = GetFollowerObjectId();
-            follower->singleMovementActive = FALSE;
-            follower->heldMovementActive = FALSE;
-            switch (DetermineFollowerDirection(&gObjectEvents[gPlayerAvatar.objectEventId], &gObjectEvents[followerObjId]))
-            {
-                case DIR_NORTH:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_UP);
-                    break;
-                case DIR_SOUTH:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_DOWN);
-                    break;
-                case DIR_EAST:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_RIGHT);
-                    break;
-                case DIR_WEST:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_LEFT);
-                    break;
-            }
-            task->data[0]++;
-        }
-    }
-    if (task->data[0] == 1)
-    {
-        if (ObjectEventClearHeldMovementIfFinished(follower))
-        {
-            SetFollowerSprite(FOLLOWER_SPRITE_INDEX_NORMAL);
-            follower->invisible = TRUE;
-            gSaveBlock2Ptr->follower.comeOutDoorStairs = 0; // In case the follower was still coming out of a door.
-            DestroyTask(taskId);
-        }
-    }
-}
-
 #if OW_ENABLE_NPC_FOLLOWERS
 #define taskState       task->data[0]
 

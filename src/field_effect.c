@@ -1375,7 +1375,6 @@ void FieldCallback_UseFly(void)
 
 static void Task_UseFly(u8 taskId)
 {
-    struct ObjectEvent *follower = &gObjectEvents[GetFollowerMapObjId()];
 #if OW_ENABLE_NPC_FOLLOWERS
     struct ObjectEvent *follower = &gObjectEvents[GetFollowerNPCMapObjId()];
 #endif
@@ -1497,8 +1496,6 @@ static void FieldCallback_FlyIntoMap(void)
 
 static void Task_FlyIntoMap(u8 taskId)
 {
-    struct ObjectEvent *player = &gObjectEvents[gPlayerAvatar.objectEventId];
-    struct ObjectEvent *follower = &gObjectEvents[GetFollowerMapObjId()];
 #if OW_ENABLE_NPC_FOLLOWERS
     struct ObjectEvent *player = &gObjectEvents[gPlayerAvatar.objectEventId];
     struct ObjectEvent *follower = &gObjectEvents[GetFollowerNPCMapObjId()];
@@ -2447,50 +2444,6 @@ static void EscapeRopeWarpOutEffect_Init(struct Task *task)
     task->tStartDir = GetPlayerFacingDirection();
 }
 
-static void EscapeRopeWarpOutEffect_HideFollower(struct Task *task)
-{
-    struct ObjectEvent *follower = &gObjectEvents[GetFollowerMapObjId()];
-    if (task->data[3] == 0)
-    {
-        if (!gSaveBlock2Ptr->follower.inProgress)
-        {
-            task->tState++;
-        }
-        else
-        {
-            u8 followerObjId = GetFollowerObjectId();
-            follower->singleMovementActive = FALSE;
-            follower->heldMovementActive = FALSE;
-            switch (DetermineFollowerDirection(&gObjectEvents[gPlayerAvatar.objectEventId], &gObjectEvents[followerObjId]))
-            {
-                case DIR_NORTH:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_UP);
-                    break;
-                case DIR_SOUTH:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_DOWN);
-                    break;
-                case DIR_EAST:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_RIGHT);
-                    break;
-                case DIR_WEST:
-                    ObjectEventSetHeldMovement(follower, MOVEMENT_ACTION_WALK_NORMAL_LEFT);
-                    break;
-            }
-            task->data[3]++;
-        }
-    }
-    if (task->data[3] == 1)
-    {
-        if (ObjectEventClearHeldMovementIfFinished(follower))
-        {
-            SetFollowerSprite(FOLLOWER_SPRITE_INDEX_NORMAL);
-            follower->invisible = TRUE;
-            gSaveBlock2Ptr->follower.comeOutDoorStairs = 0; // In case the follower was still coming out of a door.
-            task->tState++;
-        }
-    }
-}
-
 #if OW_ENABLE_NPC_FOLLOWERS
 static void EscapeRopeWarpOutEffect_HideFollower(struct Task *task)
 {
@@ -2828,8 +2781,6 @@ static void TeleportWarpInFieldEffect_SpinEnter(struct Task *task)
 
 static void TeleportWarpInFieldEffect_SpinGround(struct Task *task)
 {
-    struct ObjectEvent *player = &gObjectEvents[gPlayerAvatar.objectEventId];
-    struct ObjectEvent *follower = &gObjectEvents[GetFollowerMapObjId()];
     struct ObjectEvent *player = &gObjectEvents[gPlayerAvatar.objectEventId];
 #if OW_ENABLE_NPC_FOLLOWERS
     struct ObjectEvent *follower = &gObjectEvents[GetFollowerNPCMapObjId()];

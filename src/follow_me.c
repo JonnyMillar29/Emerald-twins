@@ -1250,14 +1250,6 @@ bool8 PlayerHasFollower(void)
     return gSaveBlock2Ptr->follower.inProgress;
 }
 
-bool8 IsPlayerOnFoot(void)
-{
-    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ON_FOOT)
-        return TRUE;
-    else
-        return FALSE;
-}
-
 bool8 FollowerComingThroughDoor(void)
 {
     if (!PlayerHasFollower())
