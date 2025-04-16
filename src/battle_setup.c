@@ -3,6 +3,7 @@
 #include "load_save.h"
 #include "battle_setup.h"
 #include "battle_tower.h"
+#include "battle_tower.h"
 #include "battle_transition.h"
 #include "main.h"
 #include "task.h"
@@ -12,7 +13,7 @@
 #include "metatile_behavior.h"
 #include "field_player_avatar.h"
 #include "fieldmap.h"
-#include "follow_me.h"
+#include "follower_npc.h"
 #include "random.h"
 #include "starter_choose.h"
 #include "script_pokemon_util.h"
@@ -388,6 +389,15 @@ static void Task_BattleStart(u8 taskId)
     case 1:
         if (IsBattleTransitionDone() == TRUE)
         {
+#if OW_ENABLE_NPC_FOLLOWERS
+            // Load the partner party if the NPC follower should participate.
+            if (gBattleTypeFlags & BATTLE_TYPE_INGAME_PARTNER && gSaveBlock3Ptr->NPCfollower.battlePartner)
+            {
+                SavePlayerParty();
+                gPartnerTrainerId = TRAINER_PARTNER(gSaveBlock3Ptr->NPCfollower.battlePartner);
+                FillPartnerParty(gPartnerTrainerId);
+            }
+#endif
             CleanupOverworldWindowsAndTilemaps();
             SetMainCallback2(CB2_InitBattle);
             RestartWildEncounterImmunitySteps();
@@ -469,14 +479,14 @@ static void DoStandardWildBattle(bool32 isDouble)
     StopPlayerAvatar();
     gMain.savedCallback = CB2_EndWildBattle;
     gBattleTypeFlags = 0;
-    if (gSaveBlock2Ptr->follower.battlePartner && F_FLAG_PARTNER_WILD_BATTLES != 0
-     && (FlagGet(F_FLAG_PARTNER_WILD_BATTLES) || F_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (gSaveBlock3Ptr->NPCfollower.inProgress && gSaveBlock3Ptr->NPCfollower.battlePartner && OW_FLAG_PARTNER_WILD_BATTLES != 0
+     && (FlagGet(OW_FLAG_PARTNER_WILD_BATTLES) || OW_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
     {
         gBattleTypeFlags |= BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE;
-        SavePlayerParty();
-        gPartnerTrainerId = TRAINER_PARTNER(gSaveBlock2Ptr->follower.battlePartner);
-        FillPartnerParty(gPartnerTrainerId);
     }
+    else 
+#endif
     if (isDouble)
         gBattleTypeFlags |= BATTLE_TYPE_DOUBLE;
     if (InBattlePyramid())
@@ -734,6 +744,14 @@ static void CB2_EndWildBattle(void)
     {
         LoadPlayerPartyAfterPartnerBattle();
     }
+    
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (gSaveBlock3Ptr->NPCfollower.battlePartner && OW_FLAG_PARTNER_WILD_BATTLES != 0
+     && (FlagGet(OW_FLAG_PARTNER_WILD_BATTLES) || OW_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
+    {
+        LoadLastThreeMons();
+    }
+#endif
 
     if (IsPlayerDefeated(gBattleOutcome) == TRUE && !InBattlePyramid() && !InBattlePike())
     {
@@ -1374,21 +1392,29 @@ void ClearTrainerFlag(u16 trainerId)
 void BattleSetup_StartTrainerBattle(void)
 {
     if (gNoOfApproachingTrainers == 2) {
-        if (gSaveBlock2Ptr->follower.battlePartner) {
+#if OW_ENABLE_NPC_FOLLOWERS
+        if (gSaveBlock3Ptr->NPCfollower.battlePartner) {
             gBattleTypeFlags = (BATTLE_TYPE_MULTI | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
         }
         else {
+#endif
             gBattleTypeFlags = (BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TWO_OPPONENTS | BATTLE_TYPE_TRAINER);
+#if OW_ENABLE_NPC_FOLLOWERS
         }
+#endif
     }
     else {
-        if (gSaveBlock2Ptr->follower.battlePartner) {
+#if OW_ENABLE_NPC_FOLLOWERS
+        if (gSaveBlock3Ptr->NPCfollower.battlePartner) {
             gBattleTypeFlags = (BATTLE_TYPE_MULTI | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_DOUBLE | BATTLE_TYPE_TRAINER);
             gTrainerBattleOpponent_B = 0xFFFF;
         }
         else {
+#endif
             gBattleTypeFlags = (BATTLE_TYPE_TRAINER);
+#if OW_ENABLE_NPC_FOLLOWERS
         }
+#endif
     }
 
     if (InBattlePyramid())
@@ -1479,7 +1505,17 @@ static void CB2_EndTrainerBattle(void)
 {
     HandleBattleVariantEndParty();
 
-    if (gSaveBlock2Ptr->follower.battlePartner)
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (gSaveBlock3Ptr->NPCfollower.battlePartner)
+        LoadLastThreeMons();
+#endif
+
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (gSaveBlock3Ptr->NPCfollower.battlePartner)
+        LoadLastThreeMons();
+#endif
+
+    if (gSaveBlock2Ptr->NPCfollower.battlePartner)
         LoadPlayerPartyAfterPartnerBattle();
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)

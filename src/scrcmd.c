@@ -23,6 +23,7 @@
 #include "field_tasks.h"
 #include "field_weather.h"
 #include "fieldmap.h"
+#include "follower_npc.h"
 #include "item.h"
 #include "lilycove_lady.h"
 #include "main.h"
@@ -1014,7 +1015,7 @@ bool8 ScrCmd_applymovement(struct ScriptContext *ctx)
     objEvent = GetFollowerObject();
     // Force follower into pokeball
     if (localId != OBJ_EVENT_ID_FOLLOWER
-        && !FlagGet(FLAG_SAFE_FOLLOWER_MOVEMENT)
+     && !FlagGet(FLAG_SAFE_FOLLOWER_MOVEMENT)
         && (movementScript < Common_Movement_FollowerSafeStart || movementScript > Common_Movement_FollowerSafeEnd)
         && (objEvent = GetFollowerObject())
         && !objEvent->invisible)
@@ -1187,6 +1188,31 @@ bool8 ScrCmd_resetobjectsubpriority(struct ScriptContext *ctx)
 
 bool8 ScrCmd_faceplayer(struct ScriptContext *ctx)
 {
+#if OW_ENABLE_NPC_FOLLOWERS
+    if (gSaveBlock3Ptr->NPCfollower.inProgress 
+     && gObjectEvents[GetFollowerNPCMapObjId()].invisible == FALSE 
+     && gSelectedObjectEvent == GetFollowerNPCObjectId())
+    {
+        struct ObjectEvent *npcFollower = &gObjectEvents[GetFollowerNPCObjectId()];
+
+        switch (DetermineFollowerNPCDirection(&gObjectEvents[gPlayerAvatar.objectEventId], npcFollower))
+        {
+            case DIR_NORTH:
+                ScriptMovement_StartObjectMovementScript(OBJ_EVENT_ID_NPC_FOLLOWER, npcFollower->mapGroup, npcFollower->mapNum, Common_Movement_FaceUp);
+                break;
+            case DIR_SOUTH:
+                ScriptMovement_StartObjectMovementScript(OBJ_EVENT_ID_NPC_FOLLOWER, npcFollower->mapGroup, npcFollower->mapNum, Common_Movement_FaceDown);
+                break;
+            case DIR_EAST:
+                ScriptMovement_StartObjectMovementScript(OBJ_EVENT_ID_NPC_FOLLOWER, npcFollower->mapGroup, npcFollower->mapNum, Common_Movement_FaceRight);
+                break;
+            case DIR_WEST:
+                ScriptMovement_StartObjectMovementScript(OBJ_EVENT_ID_NPC_FOLLOWER, npcFollower->mapGroup, npcFollower->mapNum, Common_Movement_FaceLeft);
+                break;
+        }
+        return FALSE;
+    }
+#endif
     if (gObjectEvents[gSelectedObjectEvent].active)
         ObjectEventFaceOppositeDirection(&gObjectEvents[gSelectedObjectEvent], GetPlayerFacingDirection());
     return FALSE;
