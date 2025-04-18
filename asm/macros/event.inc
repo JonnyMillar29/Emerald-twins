@@ -2627,17 +2627,6 @@
     callnative ScriptCheckFollowerNPC
     .endm
 
-	@ Updates Pokemon follower.
-	.macro updatefollowingmon
-    callnative ScriptUpdateFollowingMon
-    .endm
-
-	@ Returns Pokemon follower to ball.
-	.macro ballfollowingmon
-    callnative ScriptBallFollowingMon
-	delay 16
-	.endm
-
     @ Changes the battle partner of the existing NPC follower.
     .macro changefollowerbattler battlePartner:req
     callnative ScriptChangeFollowerNPCBattlePartner

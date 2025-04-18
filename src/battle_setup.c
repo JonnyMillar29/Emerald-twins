@@ -739,8 +739,8 @@ static void CB2_EndWildBattle(void)
     CpuFill16(0, (void *)(BG_PLTT), BG_PLTT_SIZE);
     ResetOamRange(0, 128);
     
-    if (gSaveBlock2Ptr->follower.battlePartner && F_FLAG_PARTNER_WILD_BATTLES != 0
-     && (FlagGet(F_FLAG_PARTNER_WILD_BATTLES) || F_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
+    if (gSaveBlock2Ptr->follower.battlePartner && OW_FLAG_PARTNER_WILD_BATTLES != 0
+     && (FlagGet(OW_FLAG_PARTNER_WILD_BATTLES) || OW_FLAG_PARTNER_WILD_BATTLES == ALWAYS))
     {
         LoadPlayerPartyAfterPartnerBattle();
     }
@@ -1508,15 +1508,8 @@ static void CB2_EndTrainerBattle(void)
 #if OW_ENABLE_NPC_FOLLOWERS
     if (gSaveBlock3Ptr->NPCfollower.battlePartner)
         LoadLastThreeMons();
-#endif
-
-#if OW_ENABLE_NPC_FOLLOWERS
-    if (gSaveBlock3Ptr->NPCfollower.battlePartner)
-        LoadLastThreeMons();
-#endif
-
-    if (gSaveBlock2Ptr->NPCfollower.battlePartner)
         LoadPlayerPartyAfterPartnerBattle();
+#endif
 
     if (gTrainerBattleOpponent_A == TRAINER_SECRET_BASE)
     {

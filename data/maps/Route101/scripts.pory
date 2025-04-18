@@ -305,7 +305,7 @@ Route101_Text_RouteSign:
 script Route101_EventScript_SetTwin{
 	lockall
 	msgbox("don't leave your twin behind",MSGBOX_AUTOCLOSE)
-	setfollower(7, ALL_LAND, 0, PARTNER_TWIN)
+	setfollowernpc(7, FNPC_ALL, 0, PARTNER_TWIN)
 	releaseall
 	end
 }

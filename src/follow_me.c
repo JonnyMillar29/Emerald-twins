@@ -560,15 +560,6 @@ void FollowMe_Ledges(struct ObjectEvent* npc, struct Sprite* sprite, u16* ledgeF
         speed = gPlayerAvatar.runningState ? 3 : 1;
     else
         speed = 0;
-
-    //Calculate the frames for the jump
-    frameCount = GetMiniStepCount(speed) * LEDGE_FRAMES_MULTIPLIER;   //in event_object_movement.c
-    ledgeFramesTbl[sprite->data[4]] = frameCount;
-
-    //Call the step shifter
-    currentFrame = sprite->data[6] / LEDGE_FRAMES_MULTIPLIER;
-    //stepspeeds[speed][currentFrame](sprite, sprite->data[3]);
-    RunMiniStep(sprite, speed, currentFrame);   //in event_object_movement.c
 }
 
 bool8 FollowMe_IsCollisionExempt(struct ObjectEvent* obstacle, struct ObjectEvent* collider)
@@ -1248,14 +1239,6 @@ void FollowerIntoPlayer(void)
 bool8 PlayerHasFollower(void)
 {
     return gSaveBlock2Ptr->follower.inProgress;
-}
-
-bool8 IsPlayerOnFoot(void)
-{
-    if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_ON_FOOT)
-        return TRUE;
-    else
-        return FALSE;
 }
 
 bool8 FollowerComingThroughDoor(void)

@@ -240,32 +240,6 @@ void LoadLastThreeMons(void)
         u32 data;
         gPlayerParty[i] = gSaveBlock1Ptr->playerParty[i];
 
-        // TODO: Turn this into a save migration once those are available.
-        // At which point we can remove hp and status from Pokemon entirely.
-        data = gPlayerParty[i].maxHP - gPlayerParty[i].hp;
-        SetBoxMonData(&gPlayerParty[i].box, MON_DATA_HP_LOST, &data);
-        data = gPlayerParty[i].status;
-        SetBoxMonData(&gPlayerParty[i].box, MON_DATA_STATUS, &data);
-    }
-
-    if (F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE != 0
-     && (FlagGet(F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE) || F_FLAG_HEAL_AFTER_FOLLOWER_BATTLE == ALWAYS))
-    {
-        HealPlayerParty();
-    }
-}
-
-void LoadLastThreeMons(void)
-{
-    int i;
-
-    gPlayerPartyCount = gSaveBlock1Ptr->playerPartyCount;
-
-    for (i = 3; i < PARTY_SIZE; i++)
-    {
-        u32 data;
-        gPlayerParty[i] = gSaveBlock1Ptr->playerParty[i];
-
         data = gPlayerParty[i].maxHP - gPlayerParty[i].hp;
         SetBoxMonData(&gPlayerParty[i].box, MON_DATA_HP_LOST, &data);
         data = gPlayerParty[i].status;
