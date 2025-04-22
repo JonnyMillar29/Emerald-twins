@@ -10553,29 +10553,56 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+Zorua-Hisui @ Eviolite
+Ability: Illusion
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Comeuppance
+- Detect
+- Extrasensory
+- Memento
 
-Shroomish
+Zorua-Hisui @ Eviolite
+Ability: Illusion
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Comeuppance
+- Detect
+- Extrasensory
+- Memento
 
-Marill
+Spinda @ Iapapa Berry
+Ability: Own Tempo
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Encore
+- Fake Out
+- Disable
+- Rapid Spin
 
-Roselia
+Whismur @ Throat Spray
+Ability: Rattled
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Disarming Voice
+- Extrasensory
+- Smokescreen
+- Whirlwind
 
-Skitty
+Skitty @ Normal Gem
+Ability: Wonder Skin
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Helping Hand
+- Fake Out
+- Uproar
+- Last Resort
 
-Goldeen
+Ditto @ Choice Scarf
+Ability: Imposter
 Level: 11
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Transform
 
 === TRAINER_HALLE ===
 Name: HALLE
@@ -13841,13 +13868,21 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Marill
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Lombre
+Spinda @ Mental Herb
+Ability: Contrary
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Skill Swap
+- Helping Hand
+
+Torkoal @ Heat Rock
+Ability: Drought
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ember
+- Smokescreen
+- Withdraw
+- Protect
 
 === TRAINER_COBY ===
 Name: COBY
@@ -13858,13 +13893,22 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Skarmory
-Level: 17
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Swellow
+Arcanine @ Aguav Berry
+Ability: Intimidate
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Overheat
+- Close Combat
+- Morning Sun
+- Protect
+
+Tropius @ Sitrus Berry
+Ability: Solar Power
+Level: 19
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Magical Leaf
+- Gust
+- Growth
 
 === TRAINER_LAWRENCE ===
 Name: LAWRENCE

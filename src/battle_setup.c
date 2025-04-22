@@ -1507,7 +1507,6 @@ static void CB2_EndTrainerBattle(void)
 
 #if OW_ENABLE_NPC_FOLLOWERS
     if (gSaveBlock3Ptr->NPCfollower.battlePartner)
-        LoadLastThreeMons();
         LoadPlayerPartyAfterPartnerBattle();
 #endif
 

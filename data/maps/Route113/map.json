@@ -175,8 +175,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 15,
-      "y": 15,
+      "x": 10,
+      "y": 16,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,
@@ -214,27 +214,27 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_PICNICKER",
-      "x": 7,
-      "y": 6,
+      "x": 14,
+      "y": 9,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
       "movement_range_x": 1,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route113_EventScript_Sophie",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_YOUNGSTER",
-      "x": 7,
-      "y": 13,
+      "x": 14,
+      "y": 14,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 1,
       "movement_range_y": 3,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "6",
+      "trainer_sight_or_berry_tree_id": "4",
       "script": "Route113_EventScript_Coby",
       "flag": "0"
     }
@@ -314,28 +314,28 @@
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 10,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 11,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 12,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
     },
     {
       "type": "weather",
-      "x": 14,
+      "x": 15,
       "y": 13,
       "elevation": 3,
       "weather": "COORD_EVENT_WEATHER_SUNNY"

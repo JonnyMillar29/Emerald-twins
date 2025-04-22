@@ -238,6 +238,62 @@ MeteorFalls_1F_1R_EventScript_MetCozmo::
 	release
 	end
 
+MeteorFalls_1F_1R_EventScript_Nicolas::
+	trainerbattle_single TRAINER_NICOLAS_1, MeteorFalls_1F_1R_Text_NicolasIntro, MeteorFalls_1F_1R_Text_NicolasDefeat, MeteorFalls_1F_1R_EventScript_RegisterNicolas
+	specialvar VAR_RESULT, ShouldTryRematchBattle
+	goto_if_eq VAR_RESULT, TRUE, MeteorFalls_1F_1R_EventScript_RematchNicolas
+	msgbox MeteorFalls_1F_1R_Text_NicolasPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+MeteorFalls_1F_1R_EventScript_RematchNicolas::
+	trainerbattle_rematch TRAINER_NICOLAS_1, MeteorFalls_1F_1R_Text_NicolasRematchIntro, MeteorFalls_1F_1R_Text_NicolasRematchDefeat
+	msgbox MeteorFalls_1F_1R_Text_NicolasPostRematch, MSGBOX_AUTOCLOSE
+	end
+
+MeteorFalls_1F_1R_Text_NicolasIntro:
+	.string "This is where we DRAGON users do our\n"
+	.string "training.\p"
+	.string "The CHAMPION even visits.\n"
+	.string "Now do you see how special it is here?$"
+
+MeteorFalls_1F_1R_Text_NicolasDefeat:
+	.string "Urgh!\n"
+	.string "I didn't expect you to be so strong!$"
+
+MeteorFalls_1F_1R_Text_NicolasPostBattle:
+	.string "The road ahead remains long and harsh.\p"
+	.string "When will my POKéMON and I become\n"
+	.string "the best?$"
+
+MeteorFalls_1F_1R_EventScript_RegisterNicolas::
+	special PlayerFaceTrainerAfterBattle
+	waitmovement 0
+	msgbox MeteorFalls_1F_1R_Text_NicolasRegister, MSGBOX_DEFAULT
+	register_matchcall TRAINER_NICOLAS_1
+	release
+	end
+
+MeteorFalls_1F_1R_Text_NicolasRegister:
+	.string "I want to know more about your power.\n"
+	.string "Let me register you in my POKéNAV.$"
+
+MeteorFalls_1F_1R_Text_NicolasRematchIntro:
+	.string "Since we met, we have trained hard\n"
+	.string "with our sights on number one.\p"
+	.string "Help us see how much stronger we've\n"
+	.string "become!$"
+
+MeteorFalls_1F_1R_Text_NicolasRematchDefeat:
+	.string "Urgh!\n"
+	.string "I didn't expect you to be so strong!$"
+
+MeteorFalls_1F_1R_Text_NicolasPostRematch:
+	.string "You've obviously kept up your\n"
+	.string "POKéMON training.\p"
+	.string "So long as you remain strong, I, too,\n"
+	.string "can become stronger!$"
+
 MeteorFalls_1F_1R_Text_WithThisMeteorite:
 	.string "Hehehe!\p"
 	.string "With this METEORITE, that thing in\n"
