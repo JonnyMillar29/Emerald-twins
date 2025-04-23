@@ -265,13 +265,34 @@ Route111_EventScript_SandstormTrigger::
 	doweather
 	end
 
+Route111_EventScript_WinstratesTrigger1::
+	lock
+	setvar VAR_TEMP_1, 1
+	msgbox Route111_Text_Hey, MSGBOX_AUTOCLOSE
+	release
+	applymovement OBJ_EVENT_ID_PLAYER Route111_Movement_ApproachVictor1
+	applymovement OBJ_EVENT_ID_PLAYER Common_Movement_FaceUp
+	goto Route111_EventScript_Victor
+	setvar VAR_WINSTRATE_FORCE, 1
+	end
+
+Route111_EventScript_WinstratesTrigger2::
+	lock
+	setvar VAR_TEMP_1, 2
+	msgbox Route111_Text_Hey, MSGBOX_AUTOCLOSE
+	release
+	applymovement OBJ_EVENT_ID_PLAYER Route111_Movement_ApproachVictor2
+	applymovement OBJ_EVENT_ID_PLAYER Common_Movement_FaceUp
+	goto Route111_EventScript_Victor
+	setvar VAR_WINSTRATE_FORCE, 1
+	end
+
 Route111_EventScript_Victor::
 	lock
 	faceplayer
 	setflag FLAG_LANDMARK_WINSTRATE_FAMILY
-	msgbox Route111_Text_BattleOurFamily, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route111_EventScript_BattleWinstrates
-	msgbox Route111_Text_IsThatSo, MSGBOX_DEFAULT
+	msgbox Route111_Text_BattleOurFamily, MSGBOX_DEFAULT
+	goto Route111_EventScript_BattleWinstrates
 	release
 	end
 
@@ -353,6 +374,33 @@ Route111_EventScript_CloseWinstrateDoor::
 	closedoor 13, 113
 	waitdooranim
 	return
+
+Route111_Movement_ApproachVictor1:
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
+
+Route111_Movement_ApproachVictor2:
+	walk_down
+	walk_down
+	walk_down
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	step_end
 
 Route111_Movement_WinstrateEnterHouse:
 	walk_in_place_faster_up
@@ -574,15 +622,14 @@ Route111_EventScript_TrainerHillSign::
 	msgbox Route111_Text_TrainerHillSign, MSGBOX_SIGN
 	end
 
-Route111_Text_BattleOurFamily:
-	.string "Hello! I take it you're a traveler.\p"
-	.string "How's this? What do you say to taking\n"
-	.string "on our family of four in a series of\l"
-	.string "POKéMON battles?$"
+Route111_Text_Hey:
+	.string "Hey! Over Here!$"
 
-Route111_Text_IsThatSo:
-	.string "Is that so?\n"
-	.string "Drop in, if you change your mind!$"
+Route111_Text_BattleOurFamily:
+	.string "Hello! I take it you're the tough\n"
+	.string "trainer Scott told us about\p"
+	.string "We'll take you on in a series of\l"
+	.string "POKéMON battles?$"
 
 Route111_Text_VictorIntro:
 	.string "That's the spirit! I like you!$"
@@ -593,7 +640,7 @@ Route111_Text_VictorDefeat:
 
 Route111_Text_VictorPostBattle:
 	.string "Hey, all!\n"
-	.string "I've found a pretty strong TRAINER!$"
+	.string "Scott was right, he's tough!$"
 
 Route111_Text_VictoriaIntro:
 	.string "Oh, my goodness! Aren't you young?\p"
