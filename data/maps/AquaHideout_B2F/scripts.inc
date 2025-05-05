@@ -1,6 +1,7 @@
 
 .set LOCALID_MATT, 1
 .set LOCALID_SUBMARINE, 4
+.set LOCALID_SHELLY, 7
 
 AquaHideout_B2F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, AquaHideout_B2F_OnTransition
@@ -26,8 +27,16 @@ AquaHideout_B2F_EventScript_MattNoticePlayer::
 	releaseall
 	end
 
+AquaHideout_B2F_EventScript_ShellyTrigger::
+    lockall
+	addobject LOCALID_SHELLY
+	applymovement LOCALID_SHELLY, AquaHideout_B2F_Movement_Shelly
+	goto AquaHideout_B2F_EventScript_Matt
+	end
+
 AquaHideout_B2F_EventScript_Matt::
-	trainerbattle_single TRAINER_MATT, AquaHideout_B2F_Text_MattIntro, AquaHideout_B2F_Text_MattDefeat, AquaHideout_B2F_EventScript_SubmarineEscape
+	trainerbattle_two_trainers TRAINER_MATT, AquaHideout_B2F_Text_MattDefeat, TRAINER_SHELLY_AQUAHIDEOUT, AquaHideout_B2F_Text_ShellyDefeat
+	goto AquaHideout_B2F_EventScript_SubmarineEscape
 	msgbox AquaHideout_B2F_Text_MattPostBattle, MSGBOX_DEFAULT
 	release
 	end
@@ -54,6 +63,18 @@ AquaHideout_B2F_EventScript_SubmarineEscape::
 	setflag FLAG_HIDE_LILYCOVE_CITY_AQUA_GRUNTS
 	release
 	end
+
+AquaHideout_B2F_Movement_Shelly:
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_down
+	walk_down
+	face_left
+	step_end	
 
 AquaHideout_B2F_Movement_SumbarineDepartLeft:
 	walk_left
@@ -102,7 +123,10 @@ AquaHideout_B2F_Text_MattIntro:
 
 AquaHideout_B2F_Text_MattDefeat:
 	.string "Hehehe…\n"
-	.string "So, I lost, too…$"
+	.string "So, we lost, too…$"
+
+AquaHideout_B2F_Text_ShellyDefeat:
+	.string "Hehehe…$"
 
 AquaHideout_B2F_Text_OurBossGotThroughHisPreparations:
 	.string "Hehehe!\p"

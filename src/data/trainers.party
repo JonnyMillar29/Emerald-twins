@@ -566,6 +566,34 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Baneful Bunker
 - Protect
 
+=== TRAINER_MATT_WEATHER_INSTITUTE ===
+Name: MATT
+Class: Aqua Admin
+Pic: Aqua Admin M
+Gender: Male
+Music: Aqua
+Items: Super Potion
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Cramorant @ Water Gem
+Ability: Gulp Missile
+Level: 28
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Surf
+- Ice Beam
+- Acrobatics
+- Roost
+
+Mareanie @ Black Sludge
+Ability: Merciless
+Level: 28
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Toxic
+- VenoShock
+- Haze
+- Recover
+
 === TRAINER_ZANDER ===
 Name: ZANDER
 Class: Black Belt
@@ -606,12 +634,57 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Fury Swipes
 - Knock Off
 
+=== TRAINER_SHELLY_AQUAHIDEOUT ===
+Name: SHELLY
+Class: Aqua Admin
+Pic: Aqua Admin F
+Gender: Female
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Qwilfish_Hisuian @ Quick Claw
+Ability: Intimidate
+Level: 34
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Barb Barrage
+- Bite
+- Fell Stinger
+- Minimize
+
+Ludicolo @ Leftovers
+Ability: Swift Swim
+Level: 35
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Giga Drain
+- Water Pulse
+- Icy Wind
+- Leech Seed
+
 === TRAINER_SHELLY_SEAFLOOR_CAVERN ===
 Name: SHELLY
 Class: Aqua Admin
 Pic: Aqua Admin F
 Gender: Female
 Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Sharpedo
+Level: 37
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+Mightyena
+Level: 38
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+
+=== TRAINER_ARCHIE ===
+Name: ARCHIE
+Class: Aqua Leader
+Pic: Aqua Leader Archie
+Gender: Male
+Music: Aqua
+Items: Super Potion / Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -624,6 +697,15 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Jab
 - Liquidation
 
+Azumarill @ Sitrus Berry
+Ability: Huge Power
+Level: 39
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Play Rough
+- Liquidation
+- Aqua Jet
+- Belly Drum
+
 Dhelmise @ Assault Vest
 Ability: Steelworker
 Level: 39
@@ -632,6 +714,15 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Anchor Shot
 - Shadow Claw
 - Rapid Spin
+
+Seismitoad @ Expert Belt
+Ability: Swift Swim
+Level: 41
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Earthquake
+- Liquidation
+- Ice Punch
+- Power Whip
 
 Ludicolo @ Leftovers
 Ability: Swift Swim
@@ -642,27 +733,14 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Ice Beam
 - Substitute
 
-=== TRAINER_ARCHIE ===
-Name: ARCHIE
-Class: Aqua Leader
-Pic: Aqua Leader Archie
-Gender: Male
-Music: Aqua
-Items: Super Potion / Super Potion
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
-
-Mightyena
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Crobat
-Level: 41
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-
-Sharpedo
+Sharpedo @ Life Orb
+Ability: Speed Boost
 Level: 43
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Protect
+- Crunch
+- Ice Fang
+- Dive
 
 === TRAINER_LEAH ===
 Name: LEAH
@@ -9845,17 +9923,32 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move
 
-Camerupt
-Level: 36
+Camerupt @ Passho Berry
+Ability: Solid Rock
+Level: 39
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Yawn
+- Curse
+- Stomping Tantrum
+- Take Down
 
-Mightyena
-Level: 38
+Nidoqueen @ Poison Barb
+Ability: Sheer Force
+Level: 41
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Superpower
+- Crunch
+- Sludge Wave
+- Flamethrower
 
-Golbat
-Level: 40
+Gliscor @ Toxic Orb
+Ability: Poison Heal
+Level: 43
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Earthquake
+- Swords Dance
+- Roost
+- Acrobatics
 
 === TRAINER_EDWIN_2 ===
 Name: EDWIN
@@ -11486,14 +11579,6 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 - Knock Off
 - Quick Attack
 - Fury Cutter
-
-Numel
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Zubat
-Level: 22
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_JONATHAN ===
 Name: JONATHAN
@@ -14287,17 +14372,32 @@ Music: Magma
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mightyena
+Mightyena @ Expert Belt
+Ability: Intimidate
 Level: 42
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Taunt
+- Crunch
+- Fire Fang
+- Thunder Fang
 
-Crobat
+Nidoking @ Soft Sand
+Ability: Sheer Force
 Level: 43
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Poison Jab
+- Earth Power
+- Sludge Wave
+- Megahorn
 
-Camerupt
+Krookodile @ Blackglasses
+Ability: Moxie
 Level: 44
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Earthquake
+- Foul Play
+- Sandstorm
+- Crunch
 
 === TRAINER_PETE ===
 Name: PETE
