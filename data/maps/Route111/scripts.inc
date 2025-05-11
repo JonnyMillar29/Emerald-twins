@@ -272,8 +272,8 @@ Route111_EventScript_WinstratesTrigger1::
 	release
 	applymovement OBJ_EVENT_ID_PLAYER Route111_Movement_ApproachVictor1
 	applymovement OBJ_EVENT_ID_PLAYER Common_Movement_FaceUp
-	goto Route111_EventScript_Victor
 	setvar VAR_WINSTRATE_FORCE, 1
+	goto Route111_EventScript_Victor
 	end
 
 Route111_EventScript_WinstratesTrigger2::
@@ -283,8 +283,8 @@ Route111_EventScript_WinstratesTrigger2::
 	release
 	applymovement OBJ_EVENT_ID_PLAYER Route111_Movement_ApproachVictor2
 	applymovement OBJ_EVENT_ID_PLAYER Common_Movement_FaceUp
-	goto Route111_EventScript_Victor
 	setvar VAR_WINSTRATE_FORCE, 1
+	goto Route111_EventScript_Victor
 	end
 
 Route111_EventScript_Victor::

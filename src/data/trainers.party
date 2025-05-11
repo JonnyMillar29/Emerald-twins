@@ -5068,7 +5068,7 @@ Gender: Female
 Music: Female
 Items: Potion / Potion
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / HP Aware
 
 Geodude @ Bright Powder
 Ability: Sand Veil
@@ -10091,8 +10091,20 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Treecko
+Ability: Overgrow
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Leer
+- Leafage
+
+Geodude_Alolan
+Ability: Sturdy
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Charge
+- Defense Curl
+- Tackle
 
 === TRAINER_BRENDAN_ROUTE_110_MUDKIP ===
 Name: BRENDAN
@@ -10103,17 +10115,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Geodude_Alolan @ Magnet
+Ability: Sturdy
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Rock Polish
+- Smack Down
+- Spark
+- Rollout
 
-Wingull
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Grovyle
+Grovyle @ Miracle Seed
+Ability: Overgrow
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Mega Drain
+- Assurance
+- Fury Cutter
+- Detect
 
 === TRAINER_BRENDAN_ROUTE_119_MUDKIP ===
 Name: BRENDAN
@@ -10124,17 +10160,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Pelipper
+Graveler_Alolan @ Magnet
+Ability: Sturdy
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Self Destruct
+- Smack Down
+- Thunder Punch
+- Rock Polish
 
-Grovyle
+Grovyle @ Miracle Seed
+Ability: Overgrow
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Giga Drain
+- Assurance
+- Slam
+- Detect
 
 === TRAINER_BRENDAN_ROUTE_103_TREECKO ===
 Name: BRENDAN
@@ -10145,9 +10205,21 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
-Torchic
+Rookidee
+Ability: Unnerve
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Peck
+- Leer
+- Power Trip
+
+Torchic
+Ability: Blaze
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ember
+- Scratch
+- Growl
 
 === TRAINER_BRENDAN_ROUTE_110_TREECKO ===
 Name: BRENDAN
@@ -10158,17 +10230,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wingull
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Corvisquire @ Sharp Beak
+Ability: Unnerve
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Pluck
+- Fury Attack
+- Hone Claws
+- Power Trip
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Combusken
+Combusken @ Charcoal
+Ability: Blaze 
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Aerial Ace
+- Flame Charge
+- Double Kick
+- Detect
 
 === TRAINER_BRENDAN_ROUTE_119_TREECKO ===
 Name: BRENDAN
@@ -10179,17 +10275,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pelipper
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Lombre
+Corvisquire @ Sharp Beak
+Ability: Unnerve
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Scary Face
+- Hone Claws
+- Pluck
+- Reversal
 
-Combusken
+Combusken @ Charcoal
+Ability: Blaze
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Bounce
+- Flame Charge
+- Double Kick
+- Slash
 
 === TRAINER_BRENDAN_ROUTE_103_TORCHIC ===
 Name: BRENDAN
@@ -10200,9 +10320,22 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
+Mankey
+Ability: Defiant
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fury Swipes
+- Focus Energy
+- Leer
+- Scratch
+
+Mudkip
+Ability: Torrent
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
+- Tackle
+- Growl
 
 === TRAINER_BRENDAN_ROUTE_110_TORCHIC ===
 Name: BRENDAN
@@ -10213,17 +10346,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lombre
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Mankey @ Black Belt
+Ability: Defiant
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Swagger
+- Seismic Toss
+- Low Kick
+- Fury Swipes
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Marshtomp
+Marshtomp @ Mystic Water
+Ability: Torrent
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Supersonic
+- Protect
+- Rock Throw
 
 === TRAINER_BRENDAN_ROUTE_119_TORCHIC ===
 Name: BRENDAN
@@ -10234,17 +10391,41 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lombre
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Slugma
+Primeape @ Black Belt
+Ability: Defiant
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Cross Chop
+- Assurance
+- Low Kick
+- Swagger
 
-Marshtomp
+Marshtomp @ Mystic Water
+Ability: Torrent
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Water Pulse
+- Take Down
+- Protect
+- Rock Slide
 
 === TRAINER_MAY_ROUTE_103_MUDKIP ===
 Name: MAY
@@ -10256,8 +10437,20 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Treecko
+Ability: Overgrow
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Pound
+- Leer
+- Leafage
+
+Geodude_Alolan
+Ability: Sturdy
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Charge
+- Defense Curl
+- Tackle
 
 === TRAINER_MAY_ROUTE_110_MUDKIP ===
 Name: MAY
@@ -10268,17 +10461,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wingull
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Geodude_Alolan @ Magnet
+Ability: Sturdy
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Rock Polish
+- Smack Down
+- Spark
+- Rollout
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Grovyle
+Grovyle @ Miracle Seed
+Ability: Overgrow
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Mega Drain
+- Assurance
+- Fury Cutter
+- Detect
 
 === TRAINER_MAY_ROUTE_119_MUDKIP ===
 Name: MAY
@@ -10289,17 +10506,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Lombre
+Graveler_Alolan @ Magnet
+Ability: Sturdy
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Self Destruct
+- Smack Down
+- Thunder Punch
+- Rock Polish
 
-Grovyle
+Grovyle @ Miracle Seed
+Ability: Overgrow
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Giga Drain
+- Assurance
+- Slam
+- Detect
 
 === TRAINER_MAY_ROUTE_103_TREECKO ===
 Name: MAY
@@ -10310,9 +10551,21 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Torchic
+Rookidee
+Ability: Unnerve
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Peck
+- Leer
+- Power Trip
+
+Torchic
+Ability: Blaze
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Ember
+- Scratch
+- Growl
 
 === TRAINER_MAY_ROUTE_110_TREECKO ===
 Name: MAY
@@ -10323,17 +10576,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Wingull
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Corvisquire @ Sharp Beak
+Ability: Unnerve
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Pluck
+- Fury Attack
+- Hone Claws
+- Power Trip
 
-Lombre
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Combusken
+Combusken @ Charcoal
+Ability: Blaze 
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Aerial Ace
+- Flame Charge
+- Double Kick
+- Detect
 
 === TRAINER_MAY_ROUTE_119_TREECKO ===
 Name: MAY
@@ -10344,17 +10621,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pelipper
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Lombre
+Corvisquire @ Sharp Beak
+Ability: Unnerve
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Scary Face
+- Hone Claws
+- Pluck
+- Reversal
 
-Combusken
+Combusken @ Charcoal
+Ability: Blaze
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Bounce
+- Flame Charge
+- Double Kick
+- Slash
 
 === TRAINER_MAY_ROUTE_103_TORCHIC ===
 Name: MAY
@@ -10365,9 +10666,22 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Mudkip
+Mankey
+Ability: Defiant
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Fury Swipes
+- Focus Energy
+- Leer
+- Scratch
+
+Mudkip
+Ability: Torrent
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+- Water Gun
+- Tackle
+- Growl
 
 === TRAINER_MAY_ROUTE_110_TORCHIC ===
 Name: MAY
@@ -10378,17 +10692,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lombre
+Taillow @ Flame Orb
+Ability: Guts
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Wing Attack
+- Quick Attack
+- Focus Energy
+- Growl
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
+Level: 16
+IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Belly Drum
+- Metal Claw
+- Fury Cutter
+- Quick Attack
+
+Mankey @ Black Belt
+Ability: Defiant
 Level: 18
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Swagger
+- Seismic Toss
+- Low Kick
+- Fury Swipes
 
-Slugma
-Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
-
-Marshtomp
+Marshtomp @ Mystic Water
+Ability: Torrent
 Level: 20
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Water Pulse
+- Supersonic
+- Protect
+- Rock Throw
 
 === TRAINER_MAY_ROUTE_119_TORCHIC ===
 Name: MAY
@@ -10399,17 +10737,41 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lombre
+Swellow @ Flame Orb
+Ability: Guts
+Level: 27
+IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Double Team
+- Aerial Ace
+- Quick Attack
+- Quick Guard
+
+Zangoose @ Sitrus Berry
+Ability: Immunity
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Hone Claws
+- Crush Claw
+- Belly Drum
+- Metal Claw
 
-Slugma
+Primeape @ Black Belt
+Ability: Defiant
 Level: 29
 IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+- Cross Chop
+- Assurance
+- Low Kick
+- Swagger
 
-Marshtomp
+Marshtomp @ Mystic Water
+Ability: Torrent
 Level: 31
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+- Water Pulse
+- Take Down
+- Protect
+- Rock Slide
 
 === TRAINER_ISAAC_1 ===
 Name: ISAAC
@@ -11481,13 +11843,23 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Lotad
+Rookidee @ Sharp Beak
+Ability: Unnerve
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Fury Attack
+- Hone Claws
+- Power Trip
+- Peck
 
-Torchic
+Torchic @ Charcoal
+Ability: Blaze
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Sand Attack
+- Flame Charge
+- Quick Attack
+- Detect
 
 === TRAINER_BRENDAN_RUSTBORO_MUDKIP ===
 Name: BRENDAN
@@ -11498,13 +11870,23 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Wingull
+Geodude_Alolan @ Magnet
+Ability: Galvanize
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Spark
+- Rollout
+- Rock Polish
+- Charge
 
-Treecko
+Treecko @ Miracle Seed
+Ability: Overgrow
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Quick Guard
+- Detect
+- Mega Drain
+- Quick Attack
 
 === TRAINER_PAXTON ===
 Name: PAXTON
@@ -11607,13 +11989,23 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Slugma
+Mankey @ Black Belt
+Ability: Defiant
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Seismic Toss
+- Low Kick
+- Fury Swipes
+- Focus Energy
 
-Mudkip
+Mudkip @ Mystic Water
+Ability: Torrent
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Supersonic
+- Protect
+- Rock Throw
+- Water Gun
 
 === TRAINER_MAY_RUSTBORO_MUDKIP ===
 Name: MAY
@@ -11624,13 +12016,23 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Setup First Turn
 
-Wingull
+Geodude_Alolan @ Magnet
+Ability: Galvanize
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Spark
+- Rollout
+- Rock Polish
+- Charge
 
-Treecko
+Treecko @ Miracle Seed
+Ability: Overgrow
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Quick Guard
+- Detect
+- Mega Drain
+- Quick Attack
 
 === TRAINER_MAXIE_MAGMA_HIDEOUT ===
 Name: MAXIE
@@ -15001,13 +15403,23 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Lotad
+Rookidee @ Sharp Beak
+Ability: Unnerve
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Fury Attack
+- Hone Claws
+- Power Trip
+- Peck
 
-Torchic
+Torchic @ Charcoal
+Ability: Blaze
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Sand Attack
+- Flame Charge
+- Quick Attack
+- Detect
 
 === TRAINER_MAY_RUSTBORO_TORCHIC ===
 Name: MAY
@@ -15018,13 +15430,23 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Torkoal
+Mankey @ Black Belt
+Ability: Defiant
 Level: 13
 IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
+- Seismic Toss
+- Low Kick
+- Fury Swipes
+- Focus Energy
 
-Mudkip
+Mudkip @ Mystic Water
+Ability: Torrent
 Level: 15
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+- Supersonic
+- Protect
+- Rock Throw
+- Water Gun
 
 === TRAINER_ROXANNE_2 ===
 Name: ROXANNE

@@ -1031,17 +1031,12 @@ script LittlerootTown_ProfessorBirchsLab_EventScript_NicknameTwinStarter {
 script LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter {
 	lockall
 	msgbox("Another One - DJ Khaled")
-	dynmultichoice(0, 0, TRUE, 3, 0, DYN_MULTICHOICE_CB_NONE, "Alolan Geodude", "Rookidee", "Mankey")
-	if(var(VAR_RESULT)==0) {
-		goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Geodude)
-	}
-	if(var(VAR_RESULT)==1) {
-		goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Rookidee)
-	}
-	if(var(VAR_RESULT)==2) {
-		goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Mankey)
-	}
-	end
+	switch(var(VAR_STARTER_MON)) {
+    case 0: goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Geodude)
+    case 1: goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Rookidee)
+    case 2: goto(LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Mankey)
+    }
+    end
 }
 
 script LittlerootTown_ProfessorBirchsLab_EventScript_GiftTwinStarter_Geodude {

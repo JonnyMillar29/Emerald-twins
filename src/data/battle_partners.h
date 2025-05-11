@@ -112,16 +112,18 @@
         .trainerPic = TRAINER_BACK_PIC_RUBY_SAPPHIRE_BRENDAN,
         .encounterMusic_gender = 
 0,
+#line 50
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY | AI_FLAG_HP_AWARE | AI_FLAG_SMART_SWITCHING,
         .partySize = 1,
         .party = (const struct TrainerMon[])
         {
             {
-#line 51
+#line 52
             .species = SPECIES_GEODUDE_ALOLAN,
             .gender = TRAINER_MON_RANDOM_GENDER,
-#line 53
+#line 54
             .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-#line 52
+#line 53
             .lvl = 10,
             .nature = NATURE_HARDY,
             .dynamaxLevel = MAX_DYNAMAX_LEVEL,

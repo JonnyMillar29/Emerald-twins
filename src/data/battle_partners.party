@@ -47,6 +47,7 @@ EVs: 252 Atk / 252 SpA / 6 SpD
 Name: TWIN
 Pic: RUBY_SAPPHIRE_BRENDAN
 Gender: Male
+AI: Check Bad Move / Try To Faint / Check Viability / HP Aware / Smart Switching
 
 Geodude-Alolan
 Level: 10
