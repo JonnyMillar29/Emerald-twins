@@ -37,27 +37,27 @@
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_M",
-      "x": 41,
-      "y": 72,
+      "x": 36,
+      "y": 79,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT_AND_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "16",
+      "trainer_sight_or_berry_tree_id": "7",
       "script": "Route127_EventScript_Camden",
       "flag": "0"
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SWIMMER_F",
-      "x": 24,
-      "y": 72,
+      "x": 28,
+      "y": 79,
       "elevation": 1,
       "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NORMAL",
-      "trainer_sight_or_berry_tree_id": "16",
+      "trainer_sight_or_berry_tree_id": "7",
       "script": "Route127_EventScript_Donny",
       "flag": "0"
     },
