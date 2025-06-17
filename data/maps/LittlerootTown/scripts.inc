@@ -908,7 +908,21 @@ LittlerootTown_EventScript_GiveRunningShoes::
 	msgbox LittlerootTown_Text_ComeHomeIfAnythingHappens, MSGBOX_DEFAULT
 	closemessage
 	delay 30
+	msgbox LittlerootTown_Text_Infinite_Candy, MSGBOX_DEFAULT
+	giveitem ITEM_INFINITE_CANDY
+	playfanfare MUS_OBTAIN_ITEM
+	waitfanfare
+	msgbox LittlerootTown_Text_Infinite_Candy_Explained, MSGBOX_DEFAULT
+	closemessage
 	return
+
+LittlerootTown_Text_Infinite_Candy:
+	.string "This should help you\n"
+	.string "on your adventure too!$"
+
+LittlerootTown_Text_Infinite_Candy_Explained:
+	.string "Use this when you\n"
+	.string "want to level up a Pokemon.$"
 
 LittlerootTown_Text_OurNewHomeLetsGoInside:
 	.string "MOM: {PLAYER}, we're here, honey!\p"
