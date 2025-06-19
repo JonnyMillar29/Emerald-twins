@@ -373,7 +373,12 @@ static u16 GetCurrentMapWildMonHeaderId(void)
             {
                 i += VarGet(VAR_ROUTE104NORTH_WILD_SET);
             }
-            
+
+            if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE111) &&
+                gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE111))
+            {
+                i += VarGet(VAR_ROUTE111GRASS_WILD_SET);
+            }            
 
             if (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(ROUTE116) &&
                 gSaveBlock1Ptr->location.mapNum == MAP_NUM(ROUTE116))

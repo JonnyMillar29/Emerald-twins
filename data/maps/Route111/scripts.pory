@@ -48,6 +48,7 @@ Route111_EventScript_ShowTemporaryMirageTower::
 
 Route111_OnTransition:
 	setvar VAR_TRAINER_HILL_IS_ACTIVE, 0
+	setvar VAR_ROUTE111GRASS_WILD_SET, 1
 	special SetMirageTowerVisibility
 	call_if_unset FLAG_MIRAGE_TOWER_VISIBLE, Route111_EventScript_SetLayoutNoMirageTower
 	call_if_eq VAR_MIRAGE_TOWER_STATE, 1, Route111_EventScript_SetFallingPlayerGfx
@@ -80,7 +81,10 @@ Route111_EventScript_CheckSetSandstorm::
 	goto_if_lt VAR_TEMP_0, 8, Route111_EventScript_EndCheckSetSandstorm
 Route111_EventScript_SetSandstorm::
 	setweather WEATHER_SANDSTORM
+	setvar VAR_ROUTE111GRASS_WILD_SET, 0
+	return
 Route111_EventScript_EndCheckSetSandstorm::
+	setvar VAR_ROUTE111GRASS_WILD_SET, 1
 	return
 
 Route111_EventScript_SetWinstratesNotDefeated::

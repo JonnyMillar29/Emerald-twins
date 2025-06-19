@@ -266,7 +266,7 @@
 #define VAR_RIVAL_RAYQUAZA_CALL_STEP_COUNTER             0x40F6
 #define VAR_ROUTE116EAST_WILD_SET                        0x40F7 
 #define VAR_ROUTE104NORTH_WILD_SET                       0x40F8 
-#define VAR_UNUSED_0x40F9                                0x40F9 // Unused Var
+#define VAR_ROUTE111GRASS_WILD_SET                       0x40F9
 #define VAR_UNUSED_0x40FA                                0x40FA // Unused Var
 #define VAR_UNUSED_0x40FB                                0x40FB // Unused Var
 #define VAR_UNUSED_0x40FC                                0x40FC // Unused Var
