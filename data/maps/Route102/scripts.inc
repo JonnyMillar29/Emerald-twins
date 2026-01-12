@@ -65,8 +65,13 @@ Route102_EventScript_Rick::
 	end
 
 Route102_EventScript_Tanner::
-	trainerbattle_single TRAINER_TANNER, Route102_Text_TannerIntro, Route102_Text_TannerDefeated
+	trainerbattle_single TRAINER_TANNER, Route102_Text_TannerIntro, Route102_Text_TannerDefeated, Route102_EventScript_TannerDefeated
 	msgbox Route102_Text_TannerPostBattle, MSGBOX_AUTOCLOSE
+	end
+
+Route102_EventScript_TannerDefeated::
+	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
+	giveitem ITEM_BLACK_SLUDGE, 1
 	end
 
 Route102_EventScript_Allen::

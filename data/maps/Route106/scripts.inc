@@ -17,12 +17,17 @@ Route106_EventScript_Kyla::
 	end
 
 Route106_EventScript_Brayden::
-	trainerbattle_single TRAINER_BRAYDEN_1, Route106_Text_BraydenIntro, Route106_Text_BraydenDefeated, Route106_EventScript_BraydenRegisterMatchCallAfterBattle
+	trainerbattle_single TRAINER_BRAYDEN_1, Route106_Text_BraydenIntro, Route106_Text_BraydenDefeated, Route106_EventScript_BraydenDefeated, Route106_EventScript_BraydenRegisterMatchCallAfterBattle
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, Route106_EventScript_BraydenRematch
 	msgbox Route106_Text_BraydenPostBattle, MSGBOX_DEFAULT
 	release
 	end
+
+Route106_EventScript_BraydenDefeated::
+	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
+	giveitem ITEM_QUICK_CLAW, 1
+	return
 
 Route106_EventScript_BraydenRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle

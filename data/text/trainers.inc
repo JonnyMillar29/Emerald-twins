@@ -65,7 +65,7 @@ Route102_Text_TannerDefeated:
 	.string "Nobody's faster than me...$"
 
 Route102_Text_TannerPostBattle:
-	.string "You'll need the head start.\n"
+	.string "Go now, you'll need the head start.\n"
 	.string "Wooper to the moon.$"
 
 Route103_Text_DaisyIntro:
@@ -4782,3 +4782,6 @@ VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
 	.string "to be ready for battle.\p"
 	.string "Let's wait till later.{PAUSE_UNTIL_PRESS}$"
+
+Text_GiveItem:
+	.string "Here take this for your journey.$"

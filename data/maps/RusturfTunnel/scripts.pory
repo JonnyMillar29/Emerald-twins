@@ -326,6 +326,7 @@ RusturfTunnel_EventScript_Grunt::
 	msgbox RusturfTunnel_Text_PeekoGladToSeeYouSafe, MSGBOX_DEFAULT
 	applymovement LOCALID_BRINEY, Common_Movement_FacePlayer
 	waitmovement 0
+	call RusturfTunnel_EventScript_DroppedSomething
 	message RusturfTunnel_Text_ThankYouLetsGoHomePeeko
 	waitmessage
 	waitse
@@ -346,6 +347,11 @@ RusturfTunnel_EventScript_Grunt::
 	setflag FLAG_HIDE_ROUTE_116_MR_BRINEY
 	release
 	end
+
+RusturfTunnel_EventScript_DroppedSomething::
+	msgbox RusturfTunnel_Text_DroppedSomething, MSGBOX_DEFAULT
+	giveitem ITEM_BOTTLE_CAP, 1
+	return
 
 RusturfTunnel_Movement_PushPlayerAsideForGrunt:
 	face_down
@@ -457,6 +463,10 @@ RusturfTunnel_Text_GruntTakePackage:
 RusturfTunnel_Text_PeekoGladToSeeYouSafe:
 	.string "PEEKO!\n"
 	.string "Am I glad to see you're safe!$"
+
+RusturfTunnel_Text_DroppedSomething:
+	.string "That confused young man dropped this.\n"
+	.string "You take it for your travels.$"
 
 RusturfTunnel_Text_ThankYouLetsGoHomePeeko:
 	.string "PEEKO owes her life to you!\p"

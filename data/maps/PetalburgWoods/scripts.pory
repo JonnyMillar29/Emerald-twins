@@ -94,6 +94,8 @@ PetalburgWoods_EventScript_DevonResearcherPostBattle::
 	msgbox PetalburgWoods_Text_ThatWasAwfullyClose, MSGBOX_DEFAULT
 	giveitem ITEM_GREAT_BALL
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_BagFull
+	msgbox PetalburgWoods_Text_DroppedSomething, MSGBOX_DEFAULT
+	giveitem ITEM_BOTTLE_CAP
 	goto PetalburgWoods_EventScript_DevonResearcherFinish
 	end
 
@@ -279,7 +281,7 @@ PetalburgWoods_EventScript_Lyle::
 	end
 
 PetalburgWoods_EventScript_James::
-	trainerbattle_single TRAINER_JAMES_1, PetalburgWoods_Text_InstantlyPopularWithBugPokemon, PetalburgWoods_Text_CantBePopularIfILose, PetalburgWoods_EventScript_TryRegisterJames
+	trainerbattle_single TRAINER_JAMES_1, PetalburgWoods_Text_InstantlyPopularWithBugPokemon, PetalburgWoods_Text_CantBePopularIfILose, PetalburgWoods_EventScript_JamesDefeated, PetalburgWoods_EventScript_TryRegisterJames
 	specialvar VAR_RESULT, ShouldTryRematchBattle
 	goto_if_eq VAR_RESULT, TRUE, PetalburgWoods_EventScript_JamesRematch
 	setvar VAR_0x8004, TRAINER_JAMES_1
@@ -287,6 +289,11 @@ PetalburgWoods_EventScript_James::
 	goto_if_eq VAR_RESULT, FALSE, PetalburgWoods_EventScript_TryRegisterJames2
 	msgbox PetalburgWoods_Text_PeopleRespectYou, MSGBOX_DEFAULT
 	release
+	end
+
+PetalburgWoods_EventScript_JamesDefeated::
+	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
+	giveitem ITEM_LIGHT_CLAY, 1
 	end
 
 PetalburgWoods_EventScript_TryRegisterJames::
@@ -370,6 +377,11 @@ PetalburgWoods_Text_ThatWasAwfullyClose:
 	.string "these important papers.\p"
 	.string "I know, I'll give you a GREAT BALL as\n"
 	.string "my thanks!$"
+
+PetalburgWoods_Text_DroppedSomething:
+	.string "Look at that too!\n"
+	.string "That rascal dropped something.\p"
+	.string "Here you take it.$"
 
 PetalburgWoods_Text_TeamAquaAfterSomethingInRustboro:
 	.string "Didn't that TEAM AQUA thug say\n"
