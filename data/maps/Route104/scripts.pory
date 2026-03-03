@@ -1011,7 +1011,7 @@ Route104_EventScript_Mia::
 Route104_EventScript_TwinsDefeated::
 	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
 	giveitem ITEM_SAFETY_GOGGLES, 1
-	end
+	return
 
 Route104_EventScript_Darian::
 	trainerbattle_single TRAINER_DARIAN, Route104_Text_DarianIntro, Route104_Text_DarianDefeat

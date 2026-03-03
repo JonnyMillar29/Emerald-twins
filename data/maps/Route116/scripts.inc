@@ -332,7 +332,7 @@ Route116_EventScript_Karen::
 Route116_EventScript_KarenDefeated::
 	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
 	giveitem ITEM_WEAKNESS_POLICY, 1
-	end
+	return
 
 Route116_EventScript_TryRegisterKarenAfterBattle::
 	goto_if_set FLAG_HAS_MATCH_CALL, Route116_EventScript_RegisterKarenAfterBattle

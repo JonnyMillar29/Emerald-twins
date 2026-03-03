@@ -259,7 +259,7 @@ Route103_EventScript_Miguel::
 Route103_EventScript_MiguelDefeated::
 	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
 	giveitem ITEM_LOADED_DICE, 1
-	end
+	return
 
 Route103_EventScript_MiguelRegisterMatchCallAfterBattle::
 	special PlayerFaceTrainerAfterBattle

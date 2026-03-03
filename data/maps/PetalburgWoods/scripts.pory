@@ -294,7 +294,7 @@ PetalburgWoods_EventScript_James::
 PetalburgWoods_EventScript_JamesDefeated::
 	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
 	giveitem ITEM_LIGHT_CLAY, 1
-	end
+	return
 
 PetalburgWoods_EventScript_TryRegisterJames::
 	special PlayerFaceTrainerAfterBattle

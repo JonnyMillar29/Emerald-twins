@@ -72,10 +72,10 @@ Route102_EventScript_Tanner::
 Route102_EventScript_TannerDefeated::
 	msgbox Text_GiveItem, MSGBOX_AUTOCLOSE
 	giveitem ITEM_BLACK_SLUDGE, 1
-	end
+	return
 
 Route102_EventScript_Allen::
-	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated
+	trainerbattle_single TRAINER_ALLEN, Route102_Text_AllenIntro, Route102_Text_AllenDefeated, Common_EventScript_Trainer_Defeated
 	msgbox Route102_Text_AllenPostBattle, MSGBOX_AUTOCLOSE
 	end
 
